@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:orientation="vertical"
+    android:background="@color/white_bg"
+    android:padding="10dp"
+    android:layout_marginTop="2dp"
+    >
+ <TextView
+     android:id="@+id/data_input_info_tv"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="心率：38.5次/分，心率：38.5次/分，心率：38.5次/分，心率：38.5次/分，心率：38.5次/分，心率：38.5次/分，心率：38.5次/分，心率：38.5次/分，心率：38.5次/分"
+     android:textSize="16sp"
+     />
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     >
+  <TextView
+      android:id="@+id/data_source_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="用户输入"
+      android:textColor="@color/gray"
+      />
+  <TextView
+      android:id="@+id/data_pic_num_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="2张图片"
+      android:textColor="@color/gray"
+      android:layout_toRightOf="@id/data_source_tv"
+      android:layout_marginLeft="10dp"
+      />
+  <TextView
+      android:id="@+id/date_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:textColor="@color/gray_87"
+      android:text="09-09 12:00"
+      />
+
+ </RelativeLayout>
+
+</LinearLayout>

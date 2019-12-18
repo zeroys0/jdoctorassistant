@@ -1,0 +1,18 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/white" >
+
+ <TextView
+     android:id="@+id/data_input_gv_item_tv"
+     android:layout_width="60dp"
+     android:layout_height="30dp"
+     android:layout_margin="5dp"
+     android:textSize="12dp"
+     android:gravity="center"
+     android:background="@drawable/black_border_white_corners5_bg"
+     android:textColor="@color/white_black_rb_tc"
+     />
+
+</RelativeLayout>

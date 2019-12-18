@@ -1,0 +1,55 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jxj.jdoctorassistant.main.community.fragment.AssessmentOrderFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <include
+            android:id="@+id/fragment_assessment_order_title_search"
+            layout="@layout/title_search_yy"
+            />
+
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/assessment_order_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorWhite"
+            android:cacheColorHint="#00000000"
+            android:divider="#19000000"
+            android:dividerHeight="1dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrListViewExtrasEnabled="false"
+            ptr:ptrMode="both"
+            ptr:ptrScrollingWhileRefreshingEnabled="true"
+
+            >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

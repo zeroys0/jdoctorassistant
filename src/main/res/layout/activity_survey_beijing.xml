@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.jxj.jdoctorassistant.main.community.activity.questionnairesurvey.SurveyBeijingActivity">
+
+    <include
+        android:id="@+id/activity_survey_beijing_title"
+        layout="@layout/view_doctor_title_right_bar"
+        />
+    <!-- 这里是一个RadioButton 的5个按钮 下方是5个FramLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--上方的5个条目-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自理能力"
+
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="认知能力"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="情绪能力"
+
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="视觉能力"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="背景参数"
+                android:textColor="@color/app_blue"
+                android:textSize="14sp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray"
+            android:orientation="vertical"
+            >
+
+
+            <!--1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="1.居住环境: "
+                        android:textColor="@color/m_charcoal_grey"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+
+                <!--miaoshu-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="老人居住生活情况"/>
+
+
+                </LinearLayout>
+                <!--A 答案-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+                    <RadioGroup
+                        android:id="@+id/beijing_first_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/beijing_first_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="与子女生活"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_first_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="与配偶生活"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_first_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="与亲戚或朋友生活"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_first_answer_d_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="独自居住"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="2.家庭支持: "
+                        android:textColor="@color/m_charcoal_grey"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+
+                <!--miaoshu-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="老人家庭，社会网络的支持情况"/>
+
+
+                </LinearLayout>
+                <!--A 答案-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+
+                    <RadioGroup
+                        android:id="@+id/beijing_second_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/beijing_second_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="亲属提供足够的生活支持（物质和感情）"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_second_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="亲属提供些许生活支持"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_second_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="亲属只提供感情上的支持"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_second_answer_d_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="很少看望，没有物质和感情支持"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="3.社区生活: "
+                        android:textColor="@color/m_charcoal_grey"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+                <!--miaoahu-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="老人参加社会活动的情况"/>
+
+
+                </LinearLayout>
+                <!--A 答案-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+
+                    <RadioGroup
+                        android:id="@+id/beijing_third_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/beijing_third_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="经常参加社区活动"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_third_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="较少到社区走动或参加活动"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_third_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="偶尔到社区走动或参加活动"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_third_answer_d_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="从不参加社区活动"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--4-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"
+                        />
+
+                    <ImageView
+
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="4.居住条件: "
+                        android:textColor="@color/m_charcoal_grey"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+                <!--描述1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="老人的住房设施条件"
+                        />
+
+
+                </LinearLayout>
+                <!--描述1-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="出入无障碍"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/beijing_fourth_one_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/beijing_fourth_one_answer_a_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_fourth_one_answer_b_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="无"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <!--描述2-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="室内设施有无障碍"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/beijing_fourth_two_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/beijing_fourth_two_answer_a_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="有"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_fourth_two_answer_b_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="无"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <!--描述3-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="厕所"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/beijing_fourth_third_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/beijing_fourth_third_answer_a_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="独用"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_fourth_third_answer_b_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="合用"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_fourth_third_answer_c_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="无"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <!--A 答案-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="洗浴设备"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/beijing_fouth_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/beijing_fourth_fourth_answer_a_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="独用"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_fourth_fourth_answer_b_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="合用"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_fourth_fourth_answer_c_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="无"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--5-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"
+                        />
+
+                    <ImageView
+
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="5.安全卫生: "
+                        android:textColor="@color/m_charcoal_grey"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+                <!--描述-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="老人的住房设施条件"
+                        />
+
+
+                </LinearLayout>
+                <!--A 答案-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+
+                    <RadioGroup
+                        android:id="@+id/beijing_fifth_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/beijing_fifth_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="环境条件符合老人生活卫生与安全"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_fifth_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="卫生条件陈旧，安全仍能保障"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_fifth_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="卫生条件差，生活较不方便，安全缺乏保障"/>
+
+                        <RadioButton
+                            android:id="@+id/beijing_fifth_answer_d_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="居住条件很差，有明显居住安全风险"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--6-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical"
+                >
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"
+                        />
+
+                    <ImageView
+
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="6.重大疾病"
+                        android:textColor="@color/m_charcoal_grey"
+                        android:textSize="17sp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/beijing_sixth_zhongdajibing_et"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorGray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/survey_beijing_submit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/yy_btn_bg">
+
+                    <TextView
+
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerInParent="true"
+                        android:text="下一项"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

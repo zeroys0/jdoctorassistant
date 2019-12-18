@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 登录界面 -->
+    <dimen name="activity_login_top">60dp</dimen>
+    <dimen name="login_line_width">0.1dp</dimen>
+    <dimen name="activity_bar_hei">25dp</dimen>
+    <dimen name="title_name_text">15dp</dimen>
+    <dimen name="title_bar_text">20dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="margin_bottom">5dp</dimen>
+    <dimen name="login_btn_height">40dp</dimen>
+
+    <!-- 注册页面 -->
+    <dimen name="activity_title_bar">50dp</dimen>
+
+    <!-- 基本 信息界面 -->
+    <dimen name="activity_bar">25dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="line_width">1dp</dimen>
+
+    <!-- 健康数据页面 -->
+    <dimen name="temperature_record_ts">14sp</dimen>
+    <dimen name="color_center_halo_radius">50dp</dimen>
+    <dimen name="bmi_mar_hei">30dp</dimen>
+    <dimen name="bmi_mar_top">45dp</dimen>
+    <dimen name="color_pointer_radius">14dp</dimen>
+    <dimen name="img_margin_bottom">2dp</dimen>
+    <dimen name="cpb_stroke_width">4dp</dimen>
+    <dimen name="gv_hei">80dp</dimen>
+    <dimen name="login_hei">40dp</dimen>
+    <dimen name="d_title_textsize">20sp</dimen>
+    <!-- 布局数据 -->
+    <dimen name="user_list_item_margin_left">40dp</dimen>
+    <dimen name="user_list_item_margin_top">25dp</dimen>
+    <dimen name="user_list_item_text_size">18dp</dimen>
+
+    <dimen name="doctor_title_size">22sp</dimen>
+
+    <dimen name="pop_sure_btn">4dp</dimen>
+
+    <!-- 仅供activity_change_password.xml 使用 -->
+    <dimen name="layout_height">40dp</dimen>
+    <dimen name="text_size_to_sp">18sp</dimen>
+
+    <!--APP优化值-->
+    <dimen name="main_title_height">55dp</dimen>
+    <dimen name="main_title_ts">18sp</dimen>
+    <dimen name="item_40_height">40dp</dimen>
+    
+    <!--图表字体-->
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_28">28sp</dimen>
+
+
+    <dimen name="yy_person_text_size">13sp</dimen>
+    <dimen name="yy_person_info_text_size">17sp</dimen>
+    <dimen name="add_applicant_person_width">100dp</dimen>
+    <dimen name="add_applicant_person_padding_width">0dp</dimen>
+    <dimen name="add_applicant_text_padding">10dp</dimen>
+
+
+        <dimen name="title_size">18sp</dimen>
+        <dimen name="iv_padding">10dp</dimen>
+</resources>

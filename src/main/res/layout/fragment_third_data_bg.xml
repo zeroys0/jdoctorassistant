@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    tools:context="com.jxj.jwotchhelper.page.thirdData.FragmentThirdDataBg">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:padding="10dp"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/test_time"
+        android:textColor="@color/third_data_lv_head_tc"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/bg"
+        android:textColor="@color/third_data_lv_head_tc"
+        />
+</LinearLayout>
+    <ListView
+        android:id="@+id/third_data_bg_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+
+</LinearLayout>

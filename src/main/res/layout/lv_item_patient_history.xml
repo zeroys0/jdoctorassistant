@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/white_bg" >
+ <RelativeLayout
+     android:layout_width="fill_parent"
+     android:layout_height="@dimen/activity_bar"
+     android:layout_marginLeft="@dimen/margin"
+     android:layout_marginRight="@dimen/margin"
+     >
+
+  <TextView
+      android:id="@+id/patient_history_name_tv"
+      style="@style/w_wrap_h_wrap"
+      android:layout_centerVertical="true"
+      android:textColor="@color/gray" />
+
+  <TextView
+      android:id="@+id/patient_history_content_tv"
+      style="@style/w_wrap_h_wrap"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="@dimen/margin"
+      android:textSize="@dimen/text_size" />
+
+  <ImageView
+      android:layout_width="fill_parent"
+      android:layout_height="@dimen/line_width"
+      android:layout_alignParentBottom="true"
+      android:src="@color/gray_bg" />
+ </RelativeLayout>
+
+</RelativeLayout>

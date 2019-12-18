@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/w_h_full"
+        android:background="@color/gray_bg"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/blood_pressure_titile"
+            layout="@layout/view_title_right_bar" />
+
+        <RelativeLayout
+            android:id="@+id/br_set_interval_rl"
+            style="@style/w_full_h_wrap"
+            android:background="@color/white_bg"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/set_interval"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/bloodrate_set"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/temperature_record_ts" />
+
+            <TextView
+                android:id="@+id/br_interval_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:layout_toLeftOf="@+id/tempera_timeset_unit"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tempera_timeset_unit"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="@string/minute"
+                android:textColor="@color/black"
+                android:textSize="@dimen/temperature_record_ts" />
+        </RelativeLayout>
+        <TextView
+            style="@style/w_full_h_wrap"
+            android:text="@string/bp_query_hint"
+            android:textColor="@color/gray"
+            android:layout_margin="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/recode_date_ll"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                 >
+
+                <TextView
+                    android:id="@+id/blood_date_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/start_date"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="2015-02-19"
+                    android:textColor="@color/login_loginBtn_bgColor"
+                    android:textSize="@dimen/temperature_record_ts" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/blood_query_btn"
+                android:layout_width="@dimen/color_center_halo_radius"
+                android:layout_height="@dimen/bmi_mar_hei"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/heart_ratebtn_bg"
+                android:gravity="center"
+                android:text="@string/query"
+                android:textColor="@color/white_bg"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <TextView
+                style="@style/w_weight_h_wrap"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/test_time"
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/w_weight_h_wrap"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/pr"
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/w_weight_h_wrap"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/ps"
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/w_weight_h_wrap"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/pd"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <TextView
+                style="@style/w_weight_h_wrap"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/w_weight_h_wrap"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="(次/分钟)"
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/w_weight_h_wrap"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="(mmHg)"
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/w_weight_h_wrap"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="(mmHg)"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/measure_recode_lv"
+            style="@style/w_full_h_wrap" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/bloodrecord_monitor_rl"
+            style="@style/w_full_h_wrap"
+            android:layout_marginTop="10dp"
+            android:background="@color/white_bg"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:drawableLeft="@drawable/pulse"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/heartrate_monitor"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/temperature_record_ts" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

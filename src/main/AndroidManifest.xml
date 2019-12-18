@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jxj.jdoctorassistant">
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/android_template"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".main.doctor.userlist.ActivityContrast"></activity>
+        <activity android:name=".main.doctor.userlist.WatchDataActivity" />
+        <activity android:name=".main.doctor.personal.PhoneActivity" />
+        <activity android:name=".main.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 设置环信应用的AppKey -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" /> <!-- 声明SDK所需的service SDK核心功能 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowNormalFileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" /> <!-- 声明SDK所需的receiver -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowVideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" /> <!-- <meta-data -->
+        <!-- android:name="EASEMOB_APPKEY" -->
+        <!-- android:value="hyphenate-demo#chatdemoui" /> -->
+        <!-- &lt;!&ndash; 声明sdk所需的service &ndash;&gt; -->
+        <!-- <service -->
+        <!-- android:name="com.hyphenate.chat.EMChatService" -->
+        <!-- android:exported="true" /> -->
+        <!-- &lt;!&ndash; 声明sdk所需的receiver &ndash;&gt; -->
+        <!-- <receiver android:name="com.hyphenate.chat.EMMonitorReceiver" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.PACKAGE_REMOVED" /> -->
+        <!-- <data android:scheme="package" /> -->
+        <!-- </intent-filter> -->
+        <!-- &lt;!&ndash; 可选filter &ndash;&gt; -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- <action android:name="android.intent.action.USER_PRESENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity android:name=".main.LoginActivity" />
+        <activity android:name=".main.UserFunctionActivity" /> <!-- 声明百度定位API的定位服务 -->
+        <!-- 下面是环信的 -->
+        <!-- <activity -->
+        <!-- android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/horizontal_slide" /> -->
+        <activity android:name=".main.UserListActivity" />
+        <activity android:name=".main.userInfo.BasicInfoAvtivity" />
+        <activity android:name=".main.userInfo.HealthInfoActivity" />
+        <activity android:name=".main.userInfo.ContactInfoActivity" />
+        <activity android:name=".main.UserFeedbackActivity" />
+        <activity android:name=".main.ControlCenterActivity" />
+        <activity android:name=".health.HeartRateActivity" />
+        <activity android:name=".health.BloodRecordActivity" />
+        <activity android:name=".health.ChartActivity" />
+        <activity android:name=".health.HeartRecordActivity" />
+        <activity android:name=".health.PluseChartActivity" />
+        <activity android:name=".main.contact.ToolsAddContactsActivity" />
+        <activity android:name=".main.contact.ToolsAddEmeyContactsActivity" />
+        <activity android:name=".main.contact.ToolsAddRelativesActivity" />
+        <activity android:name=".main.contact.ToolsContactsActivity" />
+        <activity android:name=".main.remind.ToolsJWotchRemindActivity" />
+        <activity android:name=".main.remind.ToolsJWotchRemindSetActivity" />
+        <activity android:name=".main.location.ToolsLocationActivity" />
+        <activity android:name=".main.location.ToolsLocationMapActivity" />
+        <activity android:name=".main.sports.ToolsJwotchSportActivity" />
+        <activity android:name=".main.sports.ToolsJWotchSportsSetActivity" />
+        <activity android:name=".main.sports.ToolsSportsRecordActivity" />
+        <activity android:name=".main.sports.ToolsSportsMoveTrailBMActivity" />
+        <activity android:name=".main.SendJDMessageActivity" />
+        <activity android:name=".main.userInfo.JWotchInfoActivity" />
+        <activity android:name=".main.thirdData.ToolsThirdDataActivity" />
+        <activity android:name=".main.disease.DiseaseInfoActivity" />
+        <activity android:name=".main.disease.DiseaseListActivity" />
+        <activity android:name=".main.disease.DiseaseContentActivity" />
+        <activity android:name=".main.register.ProtocolActivity" />
+        <activity android:name=".main.register.HospitalListActivity" />
+        <activity android:name=".main.register.DepartmentListActivity" />
+        <activity android:name=".main.register.JobTitleListActivity" />
+        <activity android:name=".main.register.CityListActivity" />
+        <activity android:name=".main.register.RegisterForDoctorActivity" />
+        <activity android:name=".main.register.PerfectInfoActivity" />
+        <activity android:name=".main.register.DoctorCertificateActivity" />
+        <activity android:name=".main.register.PictureUploadActivity" />
+        <activity android:name=".main.register.ResultActivity" />
+        <activity android:name=".main.community.ApplicantActivity" />
+        <activity android:name=".main.easymob.ChatActivity" />
+        <activity android:name=".main.doctor.DoctorMainActivity" />
+        <activity android:name=".main.doctor.userlist.PatientInfoActivity" />
+        <activity android:name=".main.doctor.userlist.PatientDetailInfoActivity" />
+        <activity android:name=".main.doctor.userlist.PatientGuideActivity" />
+        <activity android:name=".main.doctor.userlist.ExceptionUserListActivity" />
+        <activity android:name=".main.doctor.userlist.SearchUserActivity" />
+        <activity android:name=".main.doctor.userlist.SpecialUserActivity" />
+        <activity android:name=".main.doctor.schedule.ScheduleRecordActivity" />
+        <activity android:name=".main.doctor.userlist.ExceptionRecordActivity" />
+        <activity android:name=".main.doctor.userlist.HealthReportActivity" />
+        <activity
+            android:name=".main.doctor.schedule.ScheduleSetActivity"
+            android:label="@string/title_activity_schedule_set" />
+        <activity
+            android:name=".main.doctor.userlist.DataInputActivity"
+            android:label="@string/title_activity_data_input" />
+        <activity
+            android:name=".main.doctor.ApplySignListActivity"
+            android:label="@string/title_activity_sign_list" />
+        <activity
+            android:name=".main.doctor.userlist.RemarkRecordActivity"
+            android:label="@string/title_activity_remark_record" />
+        <activity
+            android:name=".main.doctor.personal.DoctorPersonalSetActivity"
+            android:label="@string/title_activity_doctor_personal_set" />
+        <activity
+            android:name=".main.doctor.personal.HospitalAddressListActivity"
+            android:label="@string/title_activity_hospital_address_list" />
+        <activity
+            android:name=".main.doctor.personal.AddHospitalActivity"
+            android:label="@string/title_activity_add_hospital" />
+        <activity
+            android:name=".main.doctor.userlist.SuggestionRecordActivity"
+            android:label="@string/title_activity_suggestion_record" />
+        <activity
+            android:name=".main.doctor.personal.ServiceListActivity"
+            android:label="@string/title_activity_service_list" />
+        <activity
+            android:name=".main.doctor.personal.NoticeListActivity"
+            android:label="@string/title_activity_notice_list" />
+        <activity
+            android:name=".main.doctor.personal.ServiceCountsActivity"
+            android:label="@string/title_activity_service_counts" />
+        <activity
+            android:name=".main.doctor.personal.AddNoticeActivity"
+            android:label="@string/title_activity_add_notice" />
+        <activity
+            android:name=".main.doctor.userlist.HdDataActivity"
+            android:label="@string/title_activity_hd_data" />
+        <activity
+            android:name=".main.doctor.userlist.MachineDataActivity"
+            android:label="@string/title_activity_machine_data" />
+        <activity
+            android:name=".main.doctor.personal.FeedbackActivity"
+            android:label="@string/title_activity_feedback" />
+        <activity
+            android:name=".main.doctor.userlist.ScheduleListActivity"
+            android:label="@string/title_activity_schedule_list" />
+        <activity
+            android:name=".main.doctor.userlist.SuggestionInfoActivity"
+            android:label="@string/title_activity_suggestion_info" />
+        <activity android:name=".main.doctor.personal.ChangePasswordActivity" />
+        <activity
+            android:name=".main.doctor.userlist.DataInputRecordActivity"
+            android:label="@string/title_activity_data_input_record" />
+        <activity
+            android:name=".main.doctor.userlist.DataInputRecordInfoActivity"
+            android:label="@string/title_activity_data_input_record_info" />
+        <activity
+            android:name=".main.doctor.personal.DoctorPersonalInfoActivity"
+            android:label="@string/title_activity_doctor_personal_info" />
+        <activity android:name=".main.doctor.personal.UpdatePhoneActivity" />
+        <activity
+            android:name=".main.community.activity.MainPinguActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".main.community.activity.personal.PersonalActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.community.activity.OrderMessageActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.community.activity.personal.PersonalPinguJiluActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.community.activity.personal.AddApplicantActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- 评估系统 -->
+        <activity
+            android:name=".main.community.activity.pinggu.QuerenPinguActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.community.activity.questionnairesurvey.SurveyActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.community.activity.questionnairesurvey.SurveyRenzhiActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.community.activity.questionnairesurvey.SurveyQinxuActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.community.activity.questionnairesurvey.SurveyShijueActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.community.activity.questionnairesurvey.SurveyBeijingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.community.activity.personal.PersonalAddressActivity"
+            android:label="@string/title_activity_personal_address" />
+        <activity
+            android:name=".main.community.activity.personal.AddAppointmentActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.community.activity.personal.ChooseApplicantActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".main.doctor.userlist.ContrastDataActivity"
+            android:label="@string/title_activity_contrast_data" />
+        <activity
+            android:name=".main.doctor.personal.DoctorQrcodeActivity"
+            android:label="@string/title_activity_doctor_qrcode" />
+        <activity android:name=".main.CodeLoginActivity" />
+        <activity android:name=".main.ResetPasswordActivity" />
+        <activity android:name=".main.register.RegisterSucessActivity" />
+        <activity android:name=".main.register.CheckFailedActivity" />
+        <activity android:name=".main.doctor.schedule.ScheduleActivity" />
+
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1139170822178561#healthambassador" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="FmekXRwK94VEHLE2lVYQwnNaFdqZ7diF" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+    </application> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+</manifest>

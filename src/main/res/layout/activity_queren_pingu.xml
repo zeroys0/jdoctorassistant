@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jxj.jdoctorassistant.main.community.activity.pinggu.QuerenPinguActivity">
+
+
+    <include
+        android:id="@+id/actity_queren_pinggu_title"
+        layout="@layout/view_doctor_title_right_bar"
+        />
+
+    <!--在主界面 设置 一个 布局 隐藏 与展示 -->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+
+            >
+
+
+            <!--页面构成          -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <!--上方的5个条目-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="参数项目总分"
+                        android:textColor="@color/app_blue"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="评估员总结"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" - "/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="确认评估报告"
+                        android:textSize="14sp"/>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/white2"/>
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <!--  -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/all_score_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/score_bg"
+                            />
+
+                        <ImageView
+                            android:id="@+id/show_score_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/all_score_iv"
+                            android:paddingLeft="20dp"
+                            android:src="@drawable/yy_show_score_detail"
+                            />
+
+                        <TextView
+                            android:id="@+id/queren_zongfen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="10dp"
+                            android:text="分"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/level_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/level_one"/>
+
+                    </LinearLayout>
+
+                    <!-- 各项得分情况 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/gray_corner_bg"
+                        android:orientation="vertical"
+                        android:padding="1dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="9"
+                            >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="4"
+                                android:text="名称 "/>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_border"/>
+
+                            <TextView
+                                android:id="@+id/community_pname"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="3"
+                                android:text="分数"/>
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_border"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="2"
+                                android:text="等级"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0.5dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="9">
+
+                            <TextView
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="4"
+                                android:text="生活自理能力 "
+
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_border"
+                                />
+
+                            <TextView
+                                android:id="@+id/queren_ziji_fenshu"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="10dp"
+                                android:layout_weight="3"
+                                android:text=""
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_border"
+                                />
+
+                            <TextView
+                                android:id="@+id/queren_ziji_level_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="2"
+                                android:text=""
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0.5dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="9"
+                            >
+
+                            <TextView
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="4"
+                                android:text="认知能力 "
+
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_border"
+                                />
+
+                            <TextView
+                                android:id="@+id/queren_renzhi_fenshu"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="10dp"
+                                android:layout_weight="3"
+                                android:text=""
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_border"
+                                />
+
+                            <TextView
+                                android:id="@+id/queren_renzhi_level_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="2"
+                                android:text=""
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0.5dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="9"
+                            >
+
+                            <TextView
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="4"
+                                android:text="情绪能力 "
+
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_border"
+                                />
+
+                            <TextView
+                                android:id="@+id/queren_qingxu_fenshu"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="10dp"
+                                android:layout_weight="3"
+                                android:text=""
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_border"
+                                />
+
+                            <TextView
+                                android:id="@+id/queren_qingxu_level_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="2"
+                                android:text=""
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0.5dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="9"
+                            >
+
+                            <TextView
+                                android:layout_width="0dp"
+
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="4"
+                                android:text="视觉能力 "
+
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_border"
+                                />
+
+                            <TextView
+                                android:id="@+id/queren_shijue_fenshu"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_margin="10dp"
+                                android:layout_weight="3"
+                                android:text=""
+                                />
+
+                            <TextView
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/gray_border"
+                                />
+
+                            <TextView
+                                android:id="@+id/queren_shijue_level_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="2"
+                                android:text=""
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--项目 描述-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="14dp"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:weightSum="11"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="项目描述"/>
+
+                        <EditText
+                            android:id="@+id/queren_miaoshu_et"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:background="@drawable/blue_border_white_corners20_bg"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:maxLines="6"
+                            android:minLines="4"
+                            android:padding="10dp"
+                            android:scrollbars="vertical"
+                            />
+
+                    </LinearLayout>
+
+                    <!--服务建议-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="14dp"
+                        android:background="@color/white"
+                        android:padding="10dp"
+                        android:weightSum="11"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="服务建议"
+                            />
+
+                        <EditText
+                            android:id="@+id/queren_fuwu_advice_et"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:background="@drawable/blue_border_white_corners20_bg"
+                            android:gravity="top"
+                            android:maxLines="6"
+                            android:minLines="4"
+                            android:padding="10dp"
+                            android:scrollbars="vertical"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="14dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:weightSum="11"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="日期"
+                            />
+
+                        <TextView
+                            android:id="@+id/queren_riqi_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"/>
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/queren_zongfen_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/yy_btn_bg">
+
+                        <TextView
+
+                            style="@style/w_wrap_h_wrap"
+                            android:layout_centerInParent="true"
+                            android:text="保存"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/show_score_compare_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+
+                >
+
+
+                <ImageView
+                    android:id="@+id/close_igv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/close"
+                    />
+
+                <ImageView
+                    android:id="@+id/ins_igv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/close_igv"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/yy_show_all_score_bg"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

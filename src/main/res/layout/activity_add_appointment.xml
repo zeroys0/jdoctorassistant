@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/activity_add_appointment_title"
+        layout="@layout/view_doctor_title_right_bar"/>
+
+
+    <RelativeLayout
+        android:id="@+id/add_order_name_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:text="姓名"
+
+            />
+
+        <TextView
+            android:id="@+id/add_order_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="点击选择申请人员"
+            android:textColor="@color/color5"
+            android:textSize="@dimen/text_16"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/add_order_idcard_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="身份证号："/>
+
+        <TextView
+            android:id="@+id/add_order_phone_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="联系方式："/>
+
+        <TextView
+            android:id="@+id/add_order_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="联系地址："/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_order_date_date_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:text="预约日期"/>
+
+        <TextView
+            android:id="@+id/add_order_date_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="点击选择预约日期"
+            android:textColor="@color/color5"
+            android:textSize="@dimen/text_16"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_order_date_time_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:text="预约时间"/>
+
+        <TextView
+            android:id="@+id/add_order_date_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="点击选择预约时间"
+            android:textColor="@color/color5"
+            android:textSize="@dimen/text_16"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

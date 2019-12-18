@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jxj.jdoctorassistant.main.community.activity.personal.PersonalActivity">
+
+    <!-- <include
+         android:id="@+id/applicat_personal_title"
+         layout="@layout/view_doctor_title_right_bar"
+         android:visibility="gone"
+         />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_igv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/yy_perpson_back"
+
+            />
+
+        <TextView
+            android:id="@+id/right_btn_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="编辑"
+            android:textColor="@color/color5"
+            />
+
+        <LinearLayout
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pinggu_personal_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            >
+            <!--姓名-->
+            <TextView
+                android:id="@+id/personal_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text=""
+                android:textColor="@color/color5"
+                android:textSize="26sp"
+                />
+            <!--评估次数-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/personal_assess_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="次评估"
+                    android:textSize="18sp"
+                    />
+
+                <!--程度-->
+                <TextView
+                    android:id="@+id/personal_item1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    />
+
+            </LinearLayout>
+
+            <!--社区地址-->
+            <TextView
+                android:id="@+id/personal_native_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="河东区-东新街-环秀西里"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:padding="12dp"
+                >
+
+
+                <Button
+                    android:id="@+id/evaluate_order_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/yy_person_btn_bg"
+                    android:text="评估记录"
+                    android:textSize="14sp"
+                    />
+
+                <Button
+                    android:id="@+id/recheck_result_btn"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/yy_person_btn_bg"
+                    android:text="新建评估"
+                    android:textSize="14sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <RadioButton
+            android:id="@+id/choose_personal_info"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="个人资料"
+            android:button="@null"
+            android:background="@drawable/exception_user_date_rb_bg"
+            android:checked="true"
+            android:textColor="@color/blue_black_rb_tc"
+            android:layout_margin="4dp"
+            />
+
+        <RadioButton
+            android:id="@+id/choose_personnal_life_situation"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="目前生活状况"
+            android:button="@null"
+            android:textColor="@color/blue_black_rb_tc"
+            android:background="@drawable/exception_user_date_rb_bg"
+            android:layout_margin="4dp"
+            />
+
+
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!--TODO 这里 有一个选择按钮  决定 下边的两个布局的展示 与隐藏 -->
+            <LinearLayout
+                android:id="@+id/personal_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gray_corner_bg"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:visibility="visible"
+                >
+
+                <!-- 这里 还少 联系方式 与代理人 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/name"
+                        android:textSize="@dimen/yy_person_text_size"/>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_pname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/ID_card"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_pid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/sex"
+                        android:textSize="@dimen/yy_person_text_size"
+
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_psex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white" >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/community_type"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_pcommunity_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/community_number"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_pnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/national"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_pnational"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/education"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_peducation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/birthday"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_pbirthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/professional"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_pprofessional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/native_place"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_pnative_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/is_married"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/community_pmarita"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="户籍所在地"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/personal_info_add_huji_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="居住所在地"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/personal_info_add_jizhu_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="邮编"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/personal_info_add_post_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="住宅电话"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/personal_info_add_house_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="移动电话"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/personal_info_add_telphone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--TODO 代理人 与 目前生活状况-->
+            <LinearLayout
+                android:id="@+id/life_sitution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gray_corner_bg"
+                android:orientation="vertical"
+                android:padding="1dp"
+                android:visibility="gone"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="代理人姓名"
+                        android:textSize="@dimen/yy_person_text_size"/>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_dailiren_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="与申请人关系"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_dailiren_relation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="代理人地址"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_dailiren_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="代理人邮编"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_dailiren_postcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="住宅电话"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_dailiren_home_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="移动电话"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_dailiren_telphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="经济状况"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_financial_situation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="居住状况"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_living_situation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="住房性质"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_living_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="帮助照料是否得到照料"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_if_have_care"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="谁在帮忙照料"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_by_who_care"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="就医方式"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_doctore_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="习惯就诊的医院"
+                        android:textSize="@dimen/yy_person_text_size"
+                        />
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/life_sitution_usual_hospital"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=""
+                        android:textColor="@color/color5"
+                        android:textSize="@dimen/yy_person_info_text_size"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

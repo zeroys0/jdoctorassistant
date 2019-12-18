@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+
+    <include 
+        android:id="@+id/sports_set_title"
+        layout="@layout/view_title_right_bar" />
+
+    <RelativeLayout
+        style="@style/w_full_h_wrap"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/change_status"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/sm_status"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/temperature_record_ts" />
+
+        <CheckBox
+            android:id="@+id/sport_add_cb"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:button="@null"
+            android:background="@drawable/sports_add_bg"
+           />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_line_width"
+        android:layout_marginTop="20dp"
+        android:src="@color/gray_bg" />
+
+    <RelativeLayout
+        android:id="@+id/start_time_rl"
+        style="@style/w_full_h_wrap"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/start_time"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/start_time"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/temperature_record_ts" />
+
+        <TextView
+            android:id="@+id/start_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="10:34"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_line_width"
+        android:src="@color/gray_bg" />
+
+    <RelativeLayout
+        android:id="@+id/end_time_rl"
+        style="@style/w_full_h_wrap"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/end_time"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/end_time"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/temperature_record_ts" />
+
+        <TextView
+            android:id="@+id/end_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="10:34"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_line_width"
+        android:layout_marginTop="20dp"
+        android:src="@color/gray_bg" />
+
+    <RelativeLayout
+        style="@style/w_full_h_wrap"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/remind_cycle"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/jwotch_remind_cycle"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/title_bar_text" />
+
+        <TextView
+            android:id="@+id/sport_set_cycle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_line_width"
+        android:src="@color/gray_bg" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bmi_mar_top" >
+
+        <include layout="@layout/view_jwotch_cycle_set" />
+    </RelativeLayout>
+
+</LinearLayout>

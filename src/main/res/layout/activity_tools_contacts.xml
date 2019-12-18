@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/w_h_full"
+        android:background="@color/gray_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bmi_mar_top"
+            android:background="@color/titlebar_bgColor" >
+
+            <ImageView
+                android:id="@+id/tools_backbtn"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/title_bar_text"
+                android:adjustViewBounds="true"
+                android:src="@drawable/back" />
+
+            <LinearLayout
+                style="@style/w_wrap_h_full"
+                android:layout_centerInParent="true" >
+
+                <RadioGroup
+                    android:id="@+id/contacts_radiogroup"
+                    android:layout_width="210dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/contacts_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/contacts_bg"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/contacts"
+                        android:textColor="@color/app_blue"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/relatives_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/relatives_bg"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/relatives"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <RadioButton
+                        android:id="@+id/emery_contacts_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/emey_contacts_bg"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/emey_contacts"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/contacts_ll"
+            style="@style/w_h_full" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

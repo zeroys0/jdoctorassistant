@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.jxj.jdoctorassistant.main.community.activity.personal.AddApplicantActivity">
+
+    <include
+        android:id="@+id/add_applicat_title"
+        layout="@layout/view_doctor_title_right_bar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_gray"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="3"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="县/区"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="乡镇"
+                    android:textAlignment="center"/>
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="社区"
+                    android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/add_new_address_xian"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:padding="12dp"
+                    android:text="县/区"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/add_new_address_xiangzhen"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:padding="12dp"
+                    android:text="乡镇"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/add_new_address_shequ"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:padding="12dp"
+                    android:text="社区"
+                    android:textAlignment="center"
+                    android:textSize="18sp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_border"
+                />
+
+            <TextView
+                android:id="@+id/add_new_shebao_num_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:hint="社区编号"
+                android:paddingLeft="@dimen/add_applicant_text_padding"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/bg_gray"
+                android:padding="10dp"
+                android:text="个人资料"/>
+
+
+            <!--个人资料 下次写这个 抽取出来 单列一个布局 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_corner_bg"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="@string/name"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/add_new_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入姓名"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="@string/ID_card"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_idcard_num_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入身份证号"
+                        android:inputType="number"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:weightSum="11"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="@string/sex"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioGroup
+                            android:id="@+id/add_new_sex_rg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/add_new_sex_man"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:clickable="true"
+                                android:text="男"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/add_new_sex_woman"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="女"/>
+
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="@string/community_type"/>
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_shebao_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入社保类型"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="@string/national"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_nation_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入民族"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="@string/birthday"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/add_new_pbirthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="请选择日期"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="@string/education"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <RadioGroup
+                            android:id="@+id/add_new_edu_rg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/edu_chuzhong"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="初中及以下"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/edu_gaozhong"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="高中"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/edu_daxue"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="大学"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/edu_benkeyishang"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="本科及以上"
+                                />
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="@string/professional"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入（曾）从事职业"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="@string/native_place"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_pnative_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入籍贯"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="@string/is_married"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/add_new_pmarita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="4"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/pmarita_weihun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="未婚"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/pmarita_yihun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="已婚"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/pmarita_sanou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="丧偶"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/pmarita_lihun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="离婚"
+                            />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_gray"
+                        android:padding="10dp"
+                        android:text="联系方式"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="户籍所在地"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/add_new_huji_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入户籍所在地"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="居住所在地"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <TextView
+                        android:id="@+id/add_new_juzhu_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入居住所在地地址"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="邮编"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_youbian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入邮编号"
+                        android:inputType="number"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="住宅电话"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_home_phone_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入住宅电话"
+                        android:inputType="number"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="移动电话"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_telphone_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入移动电话"
+                        android:inputType="number"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_gray"
+                        android:padding="10dp"
+                        android:text="代理人"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="代理人姓名"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_dailiren"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入代理人姓名"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="与申请人关系"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_dailiren_guanxi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入与代理人关系"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="代理人地址"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_dailiren_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入代理人地址"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="邮编"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_dailiren_youbian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入代理人邮编"
+                        android:inputType="number"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="住宅电话"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_dailiren_home_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入代理人住宅电话"
+                        android:inputType="number"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="移动电话"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_dailiren_telphone_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入代理人电话"
+                        android:inputType="number"
+                        />
+                </LinearLayout>
+
+
+                <!--TODO ！！！！！！！！！！！！！！！！！！！！我填的坑 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg_gray"
+                        android:padding="10dp"
+                        android:text="目前生活状况"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="经济状况"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/add_new_live_jijizhuangkuan_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_jijizhuangkuan_tuixiujing_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="退休金"/>
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_jijizhuangkuan_zinvbutie_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="子女补贴"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_jijizhuangkuan_qinyouzizhu_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="亲友资助"
+                            />
+
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_jijizhuangkuan_qitabutie_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="其他补贴"
+                            />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="居住状况"/>
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/add_new_live_juzhuzhuangkuan_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_juzhuzhuangkuan_yuzinv_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="与子女生活"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_juzhuzhuangkuan_yupeiou_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="与配偶生活"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_juzhuzhuangkuan_yuqinqi_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="与亲戚朋友居住"
+                            />
+
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_juzhuzhuangkuan_duzishenghuo_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="独自生活"
+                            />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="住房性质"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/add_new_live_zhufangxingzhi_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_zhufangxingzhi_changquan_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="产权房"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_zhufangxingzhi_zulin_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="租赁房"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_zhufangxingzhi_liangzu_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="廉租房"
+                            />
+
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_zhufangxingzhi_sifang_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="私房"
+                            />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="帮助照料时是否得到照顾"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/add_new_live_if_have_zhaogu_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_if_have_zhaogu_yes_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="是"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_if_have_zhaogu_no_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="否"
+                            />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="谁帮助照料"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+
+                    <RadioGroup
+                        android:id="@+id/add_new_live_who_zhaogu_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_who_zhaogu_zinv_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="子女"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_who_zhaogu_peiou_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="配偶"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_who_zhaogu_qinyou_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="亲友"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_who_zhaogu_qita_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="其他"
+                            />
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="就医方式"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/add_new_live_jiuyifangshi_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_jiuyifangshi_jiatingjiuyi_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="家庭病房"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_jiuyifangshi_shequjiuyi_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="社区医生"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/add_new_live_jijizhuangkuan_waichujiuyi_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="外出就诊"
+                            />
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="@dimen/add_applicant_text_padding"
+                        android:text="习惯就诊的医院"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/add_applicant_person_padding_width"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray_border"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_new_live_jiuyifangshi_yiyuan_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:hint="请输入习惯就诊的医院"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

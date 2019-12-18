@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout style="@style/w_full_h_wrap" >
+
+        <TextView
+            android:id="@+id/user_id_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="customerId"
+            android:textSize="@dimen/user_list_item_text_size" />
+
+        <TextView
+            android:id="@+id/user_name_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/user_list_item_text_size" />
+
+        <TextView
+            android:id="@+id/user_jwotch_id_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:textSize="@dimen/user_list_item_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        style="@style/w_full_h_wrap"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            style="@style/w_weight_h_full"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/w_wrap_h_full"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/ps_and_unit"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/user_ps_tv"
+                style="@style/w_wrap_h_full"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#6a6a6a"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/w_weight_h_full"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/w_wrap_h_full"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/pd_and_unit"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/user_pd_tv"
+                style="@style/w_wrap_h_full"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#6a6a6a"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/w_weight_h_full"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/w_wrap_h_full"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/hr_and_unit"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/user_hr_tv"
+                style="@style/w_wrap_h_full"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#6a6a6a"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

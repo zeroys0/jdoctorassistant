@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/jwotch_info_titile"
+        layout="@layout/view_title_right_bar" />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/jwotch_id"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/jwotch_id_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/phone_number"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/jwotch_phone_number_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/product_model"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/jwotch_product_model_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/serial_number"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/jwotch_serial_number_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/status"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/jwotch_status_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+</LinearLayout>

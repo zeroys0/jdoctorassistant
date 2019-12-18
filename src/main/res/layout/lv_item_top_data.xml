@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/w_h_full"
+    android:background="@color/white_bg"
+    android:orientation="vertical"
+    >
+<ImageView
+    android:id="@+id/top_data_igv"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/hd_data_0"
+    android:layout_gravity="center_horizontal"
+    />
+ <TextView
+     android:id="@+id/top_data_value_tv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="80"
+     android:textSize="22sp"
+     android:layout_gravity="center_horizontal"
+     />
+ <TextView
+     android:id="@+id/top_data_unit_tv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="血压"
+     android:textSize="12sp"
+     android:textColor="@color/gray_87"
+     android:layout_gravity="center_horizontal"
+     />
+
+</LinearLayout>

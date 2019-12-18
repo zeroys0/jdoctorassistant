@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/white_bg" >
+
+ <TextView
+     android:id="@+id/hd_data_tv"
+     android:layout_width="wrap_content"
+     android:layout_height="40dp"
+     android:background="@drawable/blue_corners5_bg"
+     android:textColor="@color/white"
+     android:text="血压"
+     android:paddingLeft="10dp"
+     android:paddingRight="10dp"
+     android:layout_margin="5dp"
+     android:layout_centerInParent="true"
+     android:gravity="center"
+     />
+
+</RelativeLayout>

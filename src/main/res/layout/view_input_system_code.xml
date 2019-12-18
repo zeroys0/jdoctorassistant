@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+     <TextView 
+         style="@style/w_full_h_wrap"
+         android:layout_margin="10dp"
+         android:text="@string/system_code_hint"
+         />
+     <EditText 
+         android:id="@+id/system_code_et"
+         style="@style/w_full_h_wrap"
+         android:layout_margin="10dp"
+         android:padding="10dp"
+         android:hint="@string/input_system_code"
+         android:numeric="integer"
+         android:background="@drawable/system_code_et_bg"
+         />
+    
+
+</LinearLayout>

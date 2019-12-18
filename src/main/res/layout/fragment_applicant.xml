@@ -1,0 +1,148 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jxj.jdoctorassistant.main.community.fragment.ApplicantFragment">
+
+    <LinearLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cpb_grey"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+
+        <include
+            android:id="@+id/fragment_applicant_title_search"
+            layout="@layout/title_search_yy"/>
+
+        <!--  点击 出下拉-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/applicant_level"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="全    部"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/cpb_grey"
+                />
+
+            <TextView
+                android:id="@+id/applicant_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="全部社区"
+                android:textAlignment="center"
+                android:textSize="17sp"
+                />
+
+
+        </LinearLayout>
+
+        <!--无数据 时 展示的图片 -->
+        <RelativeLayout
+            android:id="@+id/no_applicant_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/yy_no_applicant"
+
+                />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="暂时没有申请人"
+                android:textColor="#535353"
+                />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_centerHorizontal="true"
+                android:text="请更改查询条件或稍后再试"
+                android:textColor="#b6b6b6"
+                />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text2"
+                android:layout_centerHorizontal="true"
+                android:text="或点击右上角+添加申请人噢"
+                android:textColor="#b6b6b6"
+                />
+
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/applicant_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorWhite"
+            android:cacheColorHint="#00000000"
+            android:divider="#19000000"
+            android:dividerHeight="4dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrListViewExtrasEnabled="false"
+            ptr:ptrMode="both"
+            ptr:ptrScrollingWhileRefreshingEnabled="true"
+
+
+            >
+
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <!-- <GridView
+             android:id="@+id/my_recycler_view"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:scrollbars="vertical"/>-->
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    tools:context="com.jxj.jdoctorassistant.main.doctor.userlist.MachineDataActivity">
+    <include
+        android:id="@+id/machine_data_title"
+        layout="@layout/view_doctor_title_right_bar"
+        />
+    <com.jxj.jdoctorassistant.view.HorizontalListView
+        android:id="@+id/machine_data_hlv"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background="@color/white"
+        >
+
+    </com.jxj.jdoctorassistant.view.HorizontalListView>
+    <LinearLayout
+        android:id="@+id/machine_data_chart_ll"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/machine_data_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </ListView>
+</LinearLayout>
+

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jxj.jwotchhelper.page.thirdData.FragmentThirdDataBo">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/test_time"
+        android:textColor="@color/third_data_lv_head_tc"
+
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/bo"
+        android:textColor="@color/third_data_lv_head_tc"
+
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/pluse"
+        android:textColor="@color/third_data_lv_head_tc"
+        />
+</LinearLayout>
+<ListView
+    android:id="@+id/third_data_bo_lv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

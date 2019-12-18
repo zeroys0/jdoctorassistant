@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 填充颜色 -->
+    <solid android:color="@color/radio_button_choose" />
+
+    <!-- 4个角度的弧度设置 -->
+    <corners
+        android:bottomLeftRadius="@dimen/margin_bottom"
+        android:bottomRightRadius="@dimen/margin_bottom"
+        android:topLeftRadius="@dimen/margin_bottom"
+        android:topRightRadius="@dimen/margin_bottom" />
+
+</shape>

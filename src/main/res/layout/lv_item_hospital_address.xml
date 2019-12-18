@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+ <TextView
+     android:id="@+id/hospital_name_tv"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="乐聆社区医院"
+     android:textSize="20sp"
+     android:padding="10dp"
+     android:background="@color/white"
+     android:layout_marginLeft="10dp"
+     />
+ <TextView
+     android:id="@+id/hospital_address_tv"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="天津市河东区"
+     android:textColor="@color/text_black"
+     android:padding="10dp"
+     android:maxLines="1"
+     android:ellipsize="end"
+     android:layout_marginLeft="10dp"
+     android:background="@color/white"
+     />
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white"
+     android:layout_marginTop="1dp"
+     android:layout_marginLeft="10dp"
+     android:padding="5dp"
+     >
+
+  <ImageView
+      android:id="@+id/default_igv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:src="@drawable/rb_unchecked"
+      android:layout_centerVertical="true"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/default_igv"
+      android:text="默认医院"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="5dp"
+      />
+  <TextView
+      android:id="@+id/hospital_lv_delete_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:drawableLeft="@drawable/address_delete"
+      android:drawablePadding="5dp"
+      android:text="@string/delete"
+      android:layout_centerVertical="true"
+      android:gravity="center_vertical"
+      />
+  <TextView
+      android:id="@+id/hospital_lv_edit_tv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableLeft="@drawable/address_edit"
+      android:drawablePadding="5dp"
+      android:text="@string/edit"
+      android:layout_toLeftOf="@id/hospital_lv_delete_tv"
+      android:layout_centerVertical="true"
+      android:gravity="center_vertical"
+      />
+
+ </RelativeLayout>
+
+
+
+</LinearLayout>

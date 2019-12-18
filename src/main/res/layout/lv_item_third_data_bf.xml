@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/w_full_h_wrap"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/item_01_rl"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/measuringtime_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="测量时间"
+                android:textColor="#6C6C6C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/test_time_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_toRightOf="@id/measuringtime_tv"
+                android:text="2016-08-19 12:03:10"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/w_wrap_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_01_rl" >
+
+            <TextView
+                android:id="@+id/weightgoals_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="目标体重"
+                android:textColor="#6C6C6C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/weight_goals_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_toRightOf="@id/weightgoals_tv"
+                android:text="50kg"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/w_full_h_wrap"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/item_02_rl"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/measuringweight_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="测量体重"
+                android:textColor="#6C6C6C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/measuring_weight_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_toRightOf="@id/measuringweight_tv"
+                android:text="53kg"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_03_rl"
+            style="@style/w_wrap_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_02_rl" >
+
+            <TextView
+                android:id="@+id/bodyfatratio_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="体脂肪率"
+                android:textColor="#6C6C6C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/body_fat_ratio_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_toRightOf="@id/bodyfatratio_tv"
+                android:text="1.2"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_04_rl"
+            style="@style/w_wrap_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_03_rl" >
+
+            <TextView
+                android:id="@+id/basalmetabolism_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="基础代谢"
+                android:textColor="#6C6C6C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/basal_metabolism_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_toRightOf="@id/basalmetabolism_tv"
+                android:text="122"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/w_wrap_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_04_rl" >
+
+            <TextView
+                android:id="@+id/visceralfatrating_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="内脏脂肪等级"
+                android:textColor="#6C6C6C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/visceral_fat_rating_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_toRightOf="@id/visceralfatrating_tv"
+                android:text="13"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/w_full_h_wrap"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/item_05_rl"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/bonemass_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="骨量"
+                android:textColor="#6C6C6C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/bone_mass_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_toRightOf="@id/bonemass_tv"
+                android:text="2.2"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_06_rl"
+            style="@style/w_wrap_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_05_rl" >
+
+            <TextView
+                android:id="@+id/muscle_01_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="肌肉"
+                android:textColor="#6C6C6C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/muscle_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_toRightOf="@id/muscle_01_tv"
+                android:text="12.3"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_07_rl"
+            style="@style/w_wrap_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_06_rl" >
+
+            <TextView
+                android:id="@+id/bodyimpedance_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="人体阻抗"
+                android:textColor="#6C6C6C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/body_impedance_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_toRightOf="@id/bodyimpedance_tv"
+                android:text="145"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/w_wrap_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_07_rl" >
+
+            <TextView
+                android:id="@+id/moisture_01_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="水分"
+                android:textColor="#6C6C6C"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/moisture_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_toRightOf="@id/moisture_01_tv"
+                android:text="21.1"
+                android:textColor="#1C1C1C"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

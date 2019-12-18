@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:background="@color/background"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/text_gray"
+    android:text="9:10"
+    android:id="@+id/tv_ctr_time"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="7dp"
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/to_processed_item_bg"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="09:10~10:20  图文咨询"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/tv_time"
+        android:textColor="@color/text_orange"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="56dp"
+        android:id="@+id/img_head"
+        android:src="@drawable/oldman_head_default"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_black"
+        android:text="Name"
+        android:textSize="18dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginLeft="69dp"
+        android:id="@+id/tv_name"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_gray"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="难|35岁|社保"
+        android:textSize="12dp"
+        android:textColor="@color/text_gray"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="81dp"
+        android:id="@+id/tv_info"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="250dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="111dp"
+        android:textColor="@color/text_black"
+        android:textSize="12dp"
+        android:ellipsize="end"
+        android:id="@+id/tv_content"
+        android:maxLines="3"
+        android:text="症状自述：血压正常偏高，心率异常。血压正常偏高血压正常偏高，心率血压正常偏高，心率异常。"/>
+</RelativeLayout>
+
+</LinearLayout>

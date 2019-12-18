@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/w_h_full"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:layout_height="80dp"
+    android:padding="10dp">
+ <ImageView
+     android:id="@+id/schedule_record_check_igv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_vertical"
+     />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="10dp"
+      android:weightSum="5">
+
+   <TextView
+       android:id="@+id/schedule_record_time_tv"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="27dp"
+       android:textSize="12dp"
+       android:layout_weight="3"
+       android:text="2017-08-28 09:00-10:00" />
+
+   <TextView
+       android:id="@+id/schedule_record_number_tv"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:textSize="12dp"
+       android:layout_weight="2"
+       android:text="人数：3人" />
+
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:weightSum="5">
+
+   <TextView
+       android:id="@+id/schedule_record_type_tv"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:textSize="12dp"
+       android:layout_weight="3"
+       android:layout_marginTop="11dp"
+       android:layout_marginLeft="27dp"
+       android:text="类别:医院就诊" />
+
+   <TextView
+       android:id="@+id/schedule_record_address_tv"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="2"
+       android:maxLines="1"
+       android:ellipsize="end"
+       android:textSize="12dp"
+       android:layout_marginTop="11dp"
+       android:text="地址：乐聆社区医院" />
+
+  </LinearLayout>
+
+ </LinearLayout>
+
+
+</LinearLayout>

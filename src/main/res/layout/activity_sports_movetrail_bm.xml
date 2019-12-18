@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/w_h_full"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+    <include 
+        android:id="@+id/move_trail_title"
+        layout="@layout/view_title_right_bar" />
+
+        <RelativeLayout
+            style="@style/w_h_full"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                style="@style/w_h_full"
+                android:background="@color/white" >
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/lmapView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:clickable="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/half_green"
+                android:paddingTop="10dp" >
+
+                <LinearLayout
+                    style="@style/w_h_full"
+                    android:orientation="vertical"
+                    android:weightSum="7" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="3" >
+
+                        <com.jxj.jdoctorassistant.view.ProgressBarViewScale
+                            android:id="@+id/sport_jwotch_record_pbvs"
+                            style="@style/w_wrap_h_wrap" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            style="@style/w_h_full"
+                            android:orientation="horizontal"
+                            android:weightSum="3" >
+
+                            <TextView
+                                android:id="@+id/sports_jwotch_record_calorie_tv"
+                                style="@style/w_weight_h_full"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="123kcal"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/sports_jwotch_record_time_tv"
+                                style="@style/w_weight_h_full"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="123s"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/sports_jwotch_record_distance_tv"
+                                style="@style/w_weight_h_full"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="123m"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            style="@style/w_h_full"
+                            android:orientation="horizontal"
+                            android:weightSum="3" >
+
+                            <TextView
+                                style="@style/w_weight_h_full"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/sport_jwotch_sport_consume"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                style="@style/w_weight_h_full"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/sport_jwotch_sport_time"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                style="@style/w_weight_h_full"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/sport_jwotch_sport_distance"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center" >
+
+                        <LinearLayout
+                            style="@style/w_wrap_h_full"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/sports_jwotch_record_share_tv"
+                                style="@style/w_wrap_h_wrap"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/sport_jwotch_sport_record_share"
+                                android:textColor="@color/yellow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

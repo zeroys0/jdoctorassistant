@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/white_bg"
+    android:padding="5dp"
+    >
+
+ <TextView
+     android:id="@+id/hd_data_source_tv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+     android:text="用户输入"
+     />
+ <TextView
+     android:id="@+id/hd_data_time_tv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="2dp"
+     android:layout_below="@id/hd_data_source_tv"
+     android:text="09-26 13:22"
+     android:textSize="12sp"
+     android:textColor="@color/gray_87"
+     />
+ <TextView
+     android:id="@+id/hd_data_unit_tv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:textColor="@color/gray_87"
+     android:text="mmHg"
+     android:layout_centerVertical="true"
+     />
+ <TextView
+     android:id="@+id/hd_data_value_tv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toLeftOf="@id/hd_data_unit_tv"
+     android:text="142/86"
+     android:textSize="18sp"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="5dp"
+     />
+
+</RelativeLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/basic_info_titile"
+        layout="@layout/view_title_right_bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/name"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_name_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/sex"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_sex_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/national"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_national_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/birth"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_birth_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/eduction"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_edu_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/marry"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_marry_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/work_state"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_work_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/profession"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_pro_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/card_type"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_crad_type_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/card_id"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_card_id_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_bar"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin" >
+
+        <TextView
+            style="@style/w_wrap_h_wrap"
+            android:layout_centerVertical="true"
+            android:text="@string/insurance_id"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/basic_insurance_id_txt"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width"
+            android:layout_alignParentBottom="true"
+            android:src="@color/gray_bg" />
+    </RelativeLayout>
+
+</LinearLayout>

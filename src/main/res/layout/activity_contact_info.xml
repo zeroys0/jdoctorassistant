@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/basic_info_titile"
+        layout="@layout/view_title_right_bar" />
+
+    <LinearLayout
+        style="@style/w_h_full"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:text="@string/address"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/contact_address_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100dp"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/myemail"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/contact_myemail_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/phone"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/contact_phone_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/mobilephone"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/contact_mobilephone_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/otherphone"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/contact_otherphone_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/myqq"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/contact_myqq_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/postcode"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/contact_postcode_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

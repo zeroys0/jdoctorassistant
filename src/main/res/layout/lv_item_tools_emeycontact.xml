@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/bg_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fragment_sports_plan_item_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/white_corners3_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/w_full_h_wrap"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:weightSum="8"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/emey_name_tv"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textColor="#1c1c1c"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/emey_sex_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" 
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/emey_relation_tv"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" 
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/w_full_h_wrap"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:weightSum="2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/emey_phone_tv"
+                style="@style/w_weight_h_wrap"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/contact_phone"
+                android:text="13548454825"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/emey_email_tv"
+                style="@style/w_weight_h_wrap"
+                android:layout_weight="1"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/contact_email"
+                android:text="aaaaaaaaaa"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/w_full_h_wrap"
+            android:layout_marginBottom="@dimen/color_pointer_radius"
+            android:layout_marginTop="@dimen/margin_bottom"
+            android:layout_marginLeft="30dp" >
+
+            <TextView
+                android:id="@+id/emey_address_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentLeft="true"
+                android:drawableStart="@drawable/contact_address"
+                android:drawablePadding="5dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@color/gray_bg" />
+
+        <LinearLayout
+            style="@style/w_full_h_wrap"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/emey_update_rl"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/fragment_sports_plan_update_imgv"
+                    style="@style/w_wrap_h_wrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="35dp"
+                    android:src="@drawable/sport_jwotch_set_update" />
+
+                <TextView
+                    android:id="@+id/fragment_sports_plan_update_txt"
+                    style="@style/w_wrap_h_wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/fragment_sports_plan_update_imgv"
+                    android:text="修改"
+                    android:textColor="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/emey_delete_rl"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/fragment_sports_plan_delete_txt"
+                    style="@style/w_wrap_h_wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="删除"
+                    android:textColor="@color/gray" />
+
+                <ImageView
+                    android:id="@+id/fragment_sports_plan_delete_imgv"
+                    style="@style/w_wrap_h_wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/fragment_sports_plan_delete_txt"
+                    android:src="@drawable/sport_jwotch_set_delete" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/fragment_sports_plan_item_rl"
+        android:background="@color/gray_bg" >
+    </RelativeLayout>
+
+</LinearLayout>

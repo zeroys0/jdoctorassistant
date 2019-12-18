@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/w_h_full"
+        android:background="@color/white_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bmi_mar_top"
+            android:background="@color/titlebar_bgColor" >
+
+            <ImageView
+                android:id="@+id/chat_back_igb"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/color_pointer_radius"
+                android:adjustViewBounds="true"
+                android:src="@drawable/back" />
+
+            <LinearLayout
+                style="@style/w_wrap_h_full"
+                android:layout_centerInParent="true" >
+
+                <RadioGroup
+                    android:id="@+id/calorie_radiogroup"
+                    android:layout_width="210dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/calorieweek_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/contacts_bg"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="@string/week"
+                        android:textColor="@color/login_loginBtn_bgColor"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/caloriemonth_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/relatives_bg"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/month"
+                        android:textColor="@color/white_bg"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/calorieself_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/emey_contacts_bg"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="@string/self_defined"
+                        android:textColor="@color/white_bg"
+                        android:textSize="15dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/calories_save_btn"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/color_pointer_radius"
+                android:text="@string/ok"
+                android:textColor="@color/white_bg"
+                android:textSize="18dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/calorie_btn_bg" >
+
+            <ImageView
+                android:id="@+id/calorie_left_img"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/myleft_arrow" />
+            <TextView 
+                android:id="@+id/calorie_start_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/calorie_startdate_tv"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/calorie_startdate_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/calorie_date_tv"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/calorie_date_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerInParent="true"
+                android:text="~"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            
+
+            <TextView
+                android:id="@+id/calorie_enddate_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/calorie_date_tv"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <TextView 
+                android:id="@+id/calorie_end_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/calorie_enddate_tv"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/calorie_right_img"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/myright_arrow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/calorie_chart_ll"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/gray_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/measure_record" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/calorie_recode_lv"
+            style="@style/w_h_full" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

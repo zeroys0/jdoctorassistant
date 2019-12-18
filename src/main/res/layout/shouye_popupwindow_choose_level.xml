@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        >
+
+
+        <TextView
+            android:id="@+id/applicant_level_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="left"
+            />
+
+        <TextView
+            android:id="@+id/applicant_level_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/applicant_level_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/applicant_level_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/applicant_level_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

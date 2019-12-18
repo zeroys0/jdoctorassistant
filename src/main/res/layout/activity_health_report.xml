@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include android:id="@+id/healthreport_title" 
+        layout="@layout/view_title_right_bar" />
+    <ScrollView
+        android:id="@+id/healthreport_scl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        >
+      <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+               >  
+    
+     
+    <include 
+        android:id="@+id/healthreport_basic_info" 
+        layout="@layout/view_health_report_basicinfo" />
+    
+    <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:layout_marginTop="20dp"
+              android:orientation="vertical"
+              >
+              <TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="@string/hr_2"
+                  android:textColor="@color/black"
+                  android:textSize="16sp" 
+                  />
+     </LinearLayout>
+    
+ 
+<LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"             
+              android:orientation="vertical"
+               >
+
+<LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#bfdaf8"
+              android:orientation="vertical"
+               >
+<TextView
+    			  android:layout_marginTop="10dp"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="@string/pr"
+                  android:textSize="16sp"
+                  android:textColor="@color/black"
+                  />
+<TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="@string/pr_unit"
+                  android:textSize="8sp"
+                  android:textColor="@color/black"
+                  />
+
+<LinearLayout
+        android:id="@+id/prchart"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+		android:layout_margin="20dp"
+        android:orientation="horizontal"
+        >
+
+</LinearLayout>
+
+          </LinearLayout>
+<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_margin="15dp"   
+        android:orientation="vertical"
+               >
+<TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/pr_ana"
+                  android:textSize="12sp"
+                  android:textColor="@color/black"
+                  />
+<TextView
+    			  android:id="@+id/pr_data_analysis"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:textSize="12sp"
+                  android:textColor="@color/black"
+                  />
+
+</LinearLayout>           
+          
+ </LinearLayout>         
+
+<LinearLayout
+    		  android:id="@+id/bp_ll"
+    		  android:layout_marginTop="10dp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+               >
+
+<LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#bfdaf8"
+              android:orientation="vertical"
+               >
+<TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center"
+                  android:text="@string/bp"
+                  android:textSize="16sp"
+                  android:textColor="@color/black"
+                  />
+<TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="@string/bp_unit"
+                  android:textSize="8sp"
+                  android:textColor="@color/black"
+                  />
+
+<LinearLayout
+        android:id="@+id/bpchart"
+       android:layout_width="fill_parent"
+        android:layout_height="220dp"
+		android:layout_margin="20dp"   
+        android:orientation="horizontal" 
+        >
+
+</LinearLayout> 
+
+
+          </LinearLayout>
+          <LinearLayout
+       android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_margin="15dp"   
+        android:orientation="vertical"
+        >
+<TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/bp_ana"
+                  android:textSize="12sp"
+                  android:textColor="@color/black"
+                  />
+  <TextView
+    			  android:id="@+id/bp_data_analysis"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"                 
+                  android:textSize="12sp"
+                  android:textColor="@color/black"
+                  />  
+</LinearLayout>  
+  </LinearLayout>         
+
+<LinearLayout
+   			  android:layout_marginTop="10dp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+               >
+
+
+<LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#bfdaf8"
+              android:orientation="vertical"
+               >
+<TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center"
+                  android:text="@string/calorie"
+                  android:textSize="16sp"
+                  android:textColor="@color/black"
+                  />
+<TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="@string/cal_unit"
+                  android:textSize="8sp"
+                  android:textColor="@color/black"
+                  />
+<LinearLayout
+        android:id="@+id/calchart"
+       android:layout_width="fill_parent"
+        android:layout_height="220dp"
+		android:layout_margin="20dp"   
+        android:orientation="horizontal" 
+        >
+
+</LinearLayout> 
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_margin="15dp"   
+        android:orientation="vertical"
+        >
+
+ <TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/cal_ana"
+                  android:textSize="12sp"
+                  android:textColor="@color/black"
+                  />
+
+<TextView
+    			  android:id="@+id/cal_data_analysis"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:textSize="12sp"
+                  android:textColor="@color/black"
+                  />         
+</LinearLayout>
+          </LinearLayout>
+<LinearLayout
+        android:id="@+id/advicell"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+         
+          <TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="@string/hr_3"
+                  android:textColor="@color/black"
+                  android:textSize="16sp" 
+                  />
+          <LinearLayout
+              android:layout_marginTop="10dp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#bfdaf8"
+              android:orientation="vertical"
+               >
+<TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/hr_4"
+                  android:textSize="16sp"
+                  android:textColor="@color/black"
+                  />
+<LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/corners5_white_black_bg"
+       		  android:layout_margin="10dp"
+              android:orientation="vertical"
+               >
+
+<TextView
+    			  android:id="@+id/life_analysis"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"
+                  android:textSize="12sp"
+                  android:textColor="@color/black"
+                  />
+          </LinearLayout>
+ </LinearLayout>
+ <LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:background="#bfdaf8"
+              android:orientation="vertical"
+               >
+<TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center"
+                  android:text="@string/hr_5"
+                  android:textSize="16sp"
+                  android:textColor="@color/black"
+                  />
+<LinearLayout
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/corners5_white_black_bg"
+       		  android:layout_margin="10dp"
+              android:orientation="vertical"
+               >
+<TextView
+				  android:id="@+id/data_monitor_analysis"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"
+                  android:textSize="12sp"
+                  android:textColor="@color/black"
+                  />
+
+</LinearLayout>   
+
+
+          </LinearLayout>
+          <TextView
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="10dp"
+                  android:textSize="10sp"
+                  android:textColor="@color/black"
+                  android:text="@string/hr_6"
+                  />
+          </LinearLayout> 
+ </LinearLayout>
+          
+
+
+
+</ScrollView>
+
+
+</LinearLayout>

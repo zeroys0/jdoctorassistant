@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/doctor_message_lv_igv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/head_picture_man"
+
+        />
+    <ImageView
+        android:id="@+id/img_point"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/message_red_point"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/doctor_message_lv_title_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_toRightOf="@+id/doctor_message_lv_igv"
+            android:layout_alignParentTop="true"
+            android:text="日程代办"
+            android:textSize="@dimen/user_list_item_text_size" />
+
+        <TextView
+            android:id="@+id/doctor_message_lv_content_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_toRightOf="@+id/doctor_message_lv_igv"
+            android:layout_alignParentBottom="true"
+            android:text="预约了您的图文咨询"
+            android:textSize="14dp" />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:text="2"
+        android:background="@drawable/message_red_point"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_message_count"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</RelativeLayout>

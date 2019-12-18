@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    tools:context="com.jxj.jdoctorassistant.main.doctor.personal.ServiceListActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/back_igv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/left_arrow" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/right_btn_igv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/right_btn_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/blue_border_white_corners20_bg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <EditText
+            android:id="@+id/service_list_words_etv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="100dp"
+            android:hint="@string/input_words"
+            android:textSize="12dp"
+            android:background="@null"
+            android:padding="5dp"
+            />
+        <ImageButton
+            android:id="@+id/search_igb"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/search_doctor"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="#919191"
+        android:text="本月"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="11dp"/>
+
+    <ListView
+        android:id="@+id/service_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        ></ListView>
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/w_h_full"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+
+    <include android:id="@+id/heart_rate_title"
+        layout="@layout/view_title_right_bar" />
+
+    <RelativeLayout
+        android:id="@+id/hr_set_interval_rl"
+        style="@style/w_full_h_wrap"
+        android:background="@color/white_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/set_interval"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/bloodrate_set"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/temperature_record_ts" />
+
+        <TextView
+            android:id="@+id/hr_interval_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/br_timeset_unit"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/br_timeset_unit"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="@string/minute"
+            android:textColor="@color/black"
+            android:textSize="@dimen/temperature_record_ts" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/w_full_h_wrap"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/query_hint"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/temperature_record_ts" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hr_start_date_rl"
+        style="@style/w_full_h_wrap"
+        android:background="@color/white_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/start_date"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/start_date"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/temperature_record_ts" />
+
+        <TextView
+            android:id="@+id/hr_start_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hr_end_date_rl"
+        style="@style/w_full_h_wrap"
+        android:background="@color/white_bg"
+        android:layout_marginTop="0.1dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/end_date"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/end_date"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/temperature_record_ts" />
+
+        <TextView
+            android:id="@+id/hr_end_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/hr_query_btn"
+        android:layout_width="@dimen/gv_hei"
+        android:layout_height="@dimen/login_hei"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/blue_corners5_bg"
+        android:gravity="center"
+        android:text="@string/query"
+        android:textColor="@color/white_bg"
+        android:textSize="20dp" />
+
+    
+   <RelativeLayout
+        android:id="@+id/heartrate_monitor_rl"
+        style="@style/w_full_h_wrap"
+        android:background="@color/white_bg"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/pulse"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/heartrate_monitor"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/temperature_record_ts" />
+
+
+    </RelativeLayout>
+    
+    
+
+    
+
+</LinearLayout>

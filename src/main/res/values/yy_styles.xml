@@ -1,0 +1,62 @@
+<resources>
+
+
+    <style name="survey_question">
+        <item name="android:layout_marginTop">4dp</item>
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingTop">15dp</item>
+    </style>
+
+    <style name="survey_question_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:textColor">@color/m_charcoal_grey</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="survey_answer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">40dp</item>
+    </style>
+
+    <style name="survey_answer_item">
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/shape_white</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:textColor">@color/m_item_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="survey_answer_item_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/m_item_text</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="survey_next_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/m_item_text</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+</resources>

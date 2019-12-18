@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <array name="arr_schedule_state">
+        <item>病人申请预约</item>
+        <item>病人取消预约</item>
+        <item>医生完成预约</item>
+        <item>病人确认预约完成</item>
+        <item>医生取消预约</item>
+    </array>
+    <array name="arr_service_state">
+        <item>预约成功</item>
+        <item>客户已取消</item>
+        <item>医生已完成</item>
+        <item>客户确认完成</item>
+    </array>
+
+    <!-- 登录界面 -->
+    <array name="data">
+        <item>血压</item>
+        <item>心率</item>
+        <item>血氧</item>
+        <item>血糖</item>
+        <item>计步</item>
+        <item>卡路里</item>
+        <item>体温</item>
+        <item>体重</item>
+        <item>体脂肪率</item>
+        <item>水分</item>
+        <item>肌肉</item>
+        <item>骨量</item>
+        <item>基础代谢</item>
+    </array>
+    <array name="data_unit">
+        <item>血压(mmHg)</item>
+        <item>心率(次/分)</item>
+        <item>血氧(mmol/L)</item>
+        <item>血糖(mmol/L)</item>
+        <item>计步(步数)</item>
+        <item>卡路里(kcal)</item>
+        <item>体温(℃)</item>
+        <item>体重(kg)</item>
+        <item>体脂肪率(%)</item>
+        <item>水分(%)</item>
+        <item>肌肉(%)</item>
+        <item>骨量(%)</item>
+        <item>基础代谢(%)</item>
+    </array>
+    <array name="data_arr">
+        <item>身高</item>
+        <item>体重</item>
+        <item>BMI</item>
+        <item>体脂肪率</item>
+        <item>基础代谢</item>
+        <item>体温</item>
+        <item>心率</item>
+        <item>收缩压</item>
+        <item>舒张压</item>
+        <item>脉搏</item>
+        <item>血氧</item>
+        <item>血糖</item>
+    </array>
+    <string name="app_name">随护助手</string>
+    <string name="action_settings">设置</string>
+    <string name="login_username_hint">请输入手机号码</string>
+    <string name="login_password_edt">请输入密码</string>
+    <string name="login_login_btn">登录</string>
+    <string name="login_register_btn">注册</string>
+
+    <!-- 提醒 -->
+    <string name="login_succeeded">登录成功</string>
+    <string name="login_find_password">忘记密码 ?</string>
+    <string name="login_code">验证码登录</string>
+    <string name="login_password">密码登录</string>
+    <string name="login_title">"Hi,健康大使-医生版欢迎您"</string>
+    <string name="jwotch_remind_list">腕表提醒列表</string>
+    <string name="add_newmind">新增提醒</string>
+    <string name="add_newmind_txt">腕表提醒信息</string>
+    <string name="remind_theme">请输入腕表提醒主题</string>
+    <string name="jwotch_remind_theme">主题</string>
+    <string name="time">时间</string>
+
+    <string name="jwotch_remind_cycle">重复周期</string>
+    <string name="cycle_one">一次</string>
+    <string name="cycle_day">每天</string>
+    <string name="cycle_month">每月</string>
+    <string name="cycle_self">自定义</string>
+    <string name="Monday">星期一</string>
+    <string name="Tuesday">星期二</string>
+    <string name="Wednesday">星期三</string>
+
+    <!--  公用名词-->
+    <string name="Thursday">星期四</string>
+    <string name="Friday">星期五</string>
+
+    <!-- 数据统计图-->
+    <string name="Saturday">星期六</string>
+    <string name="Sunday">星期日</string>
+    <string name="define">确定</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">截止时间</string>
+    <string name="left_right_arr">左右箭头</string>
+    <string name="select_date">选择日期</string>
+    <string name="chart">趋势图</string>
+    <string name="date">日期</string>
+    <string name="pre_month">上月</string>
+
+
+    <!-- 我的界面 -->
+    <string name="next_month">下月</string>
+    <string name="pre_week">上周</string>
+    <string name="next_week">下周</string>
+    <string name="start">开始</string>
+    <string name="end">截止</string>
+    <string name="basic_info">基本信息</string>
+    <string name="health_info">健康信息</string>
+    <string name="contact_info">通讯信息</string>
+    <string name="my_integration">我的积分</string>
+    <string name="change_account">切换账号</string>
+
+    <string name="system_set">系统设置</string>
+    <string name="doctor_set_photo">拍照上传</string>
+    <string name="doctor_set_img">图库上传</string>
+
+    <!-- 健康报告界面 -->
+    <string name="SD_warn">SD卡不可用！</string>
+    <string name="health_report">健康报告</string>
+    <string name="update_phone">更换密保手机</string>
+    <string name="input_phone">请输入您的手机号码</string>
+    <string name="bind">绑定</string>
+
+    <string name="myshare">分享</string>
+    <string name="big">大</string>
+    <string name="small">小</string>
+
+    <string name="bp">血压</string>
+    <string name="age">年龄</string>
+    <string name="bp_cur">脉搏曲线</string>
+    <string name="normal_up">正常上限</string>
+    <string name="normal_down">正常下限</string>
+
+    <string name="ana_fail">解析失败</string>
+    <string name="cal_ana_fail">由于网络或其他原因，未获得身高体重参数，卡路里数据解析失败。</string>
+    <string name="ihhr">爱普瑞康健康大使健康报告</string>
+
+    <string name="hphr">健康大使个人健康报告</string>
+    <string name="iparecare">爱普瑞康</string>
+    <string name="bp_ana">血压数据分析：</string>
+    <string name="pr_ana">脉搏数据分析：</string>
+    <string name="cal_ana">卡路里数据分析：</string>
+    <string name="hr_1">健康大使个人健康检测初步报告</string>
+
+    <string name="hr_2">健康检测结果-腕宝检测数据</string>
+    <string name="hr_3">健康检测结果-建议与分析</string>
+    <string name="hr_4">生活方式相关建议与分析</string>
+    <string name="hr_5">数据监测建议与分析</string>
+    <string name="hr_6">(注：此建议由系统智能生成，如有与客服人员发送的报告不符，请参照客服人员发送的报告。)</string>
+    <string name="bp_unit">(mmHg)</string>
+    <!-- 工具界面 -->
+
+    <string name="pr_unit">(次/分钟)</string>
+
+
+    <!-- 联系人 -->
+    <string name="minute">分钟</string>
+    <string name="cal_unit">(kcal)</string>
+    <string name="step">步</string>
+    <string name="state">state</string>
+    <string name="contacts">联系人</string>
+    <string name="relatives">亲人号码</string>
+    <string name="emey_contacts">紧急联系人</string>
+    <string name="add_newcontacts">联系人信息</string>
+    <string name="add_relatives">亲人号码信息</string>
+    <string name="add_relatives_position">位置</string>
+    <!-- 求救定位界面 -->
+    <string name="add_relatives_number">请输入数字1,2,3,4</string>
+    <string name="add_emey_relatives">紧急联系人信息</string>
+    <string name="relations">关系</string>
+    <string name="tools_location">求救定位</string>
+    <string name="help_location">求救定位</string>
+    <string name="locate">定位</string>
+    <string name="locating">正在查询</string>
+    <string name="located">查询结束</string>
+    <string name="location_record">定位记录</string>
+    <string name="already_refresh">已刷新</string>
+    <string name="address_data_req_fail">地址数据获取失败</string>
+    <string name="map_exception">地图发生异常</string>
+    <string name="general_location">一般定位</string>
+    <string name="red_location">紧急呼叫定位</string>
+    <!-- 运动监测界面 -->
+    <string name="green_location">健康咨询定位</string>
+    <string name="type">类型</string>
+    <string name="here">这里</string>
+    <string name="location_info">位置信息</string>
+    <string name="sm_plan_set">运动监测计划设置</string>
+    <string name="sm_status">状态</string>
+    <string name="sm_status_activate">启动</string>
+    <string name="sm_status_stop">停止</string>
+    <string name="sm_cycle">重复类型</string>
+    <string name="sm_plan">运动监测计划</string>
+    <string name="sm_record">运动记录</string>
+
+    <string name="sport_monitor">运动监测</string>
+    <string name="activity_monitor">活动监测</string>
+    <string name="sport_type">运动类型</string>
+    <string name="add_new_plan">运动计划</string>
+    <string name="ma_ll_data_exception">经纬度数据异常</string>
+    <!-- 运动界面 -->
+
+    <string name="ma_trail_map">我的运动轨迹</string>
+    <string name="sm_time_hint1">开始时间应早于结束时间！</string>
+    <string name="sm_time_hint2">请确保时间段没有冲突!</string>
+    <string name="sm_time_hint3">计划执行时间不合理!</string>
+    <string name="measure">正在测量</string>
+    <string name="temperature_curve">温度曲线</string>
+    <string name="curve_temp">温度贴片曲线图</string>
+    <string name="curve_line">波动曲线</string>
+    <string name="curve_size">波动程度</string>
+    <string name="sport_jwotch_set">运动设置</string>
+
+    <string name="sport_jwotch_set_list">运动监测计划列表</string>
+    <string name="sport_jwotch_planset">运动监测计划设置</string>
+    <string name="sport_jwotch_list_starttime">开始时间</string>
+    <string name="sport_jwotch_list_endtime">截止时间</string>
+    <string name="sport_jwotch_activity_monitor">活动监测</string>
+    <string name="sport_jwotch_sport_monitor">运动监测</string>
+    <string name="sport_jwotch_sport_consume">运动消耗</string>
+
+    <!--&lt;!&ndash; 充值套餐界面 &ndash;&gt;-->
+    <!--<string name="recharge_package">充值套餐</string>-->
+    <!--<string name="recharge_package_ins">查看余额</string>-->
+    <!--<string name="my_balance">当前余额</string>-->
+    <!--<string name="recharge">充值</string>-->
+    <!--<string name="money">元</string>-->
+    <!--<string name="money_pay">支付类型</string>-->
+    <!--<string name="money_pay_now">立即支付</string>-->
+    <!--<string name="recharge_amount">充值金额</string>-->
+    <!--<string name="packages">服务套餐</string>-->
+    <!--<string name="packages_info">服务套餐介绍</string>-->
+    <!--<string name="recharge_success">充值成功</string>-->
+    <!--<string name="recharge_fail">充值失败</string>-->
+    <!--<string name="recharge_cancel">充值取消</string>-->
+    <!--<string name="cancel_pay">取消支付</string>-->
+    <!--<string name="notice">提示</string>-->
+    <!--<string name="balance_exception">余额显示异常</string>-->
+    <!--<string name="ne_balance_not_show">网络异常，余额未显示</string>-->
+    <!--<string name="balance_ana_exception">余额解析异常</string>-->
+    <!--<string name="notInstalled">未安装支付软件</string>-->
+
+
+    <!-- 数据展示界面 -->
+    <string name="sport_jwotch_sport_time">运动时间</string>
+    <string name="sport_jwotch_sport_distance">运动里程</string>
+    <string name="sport_jwotch_sport_record_share">保持运动，继续加油呦!</string>
+    <string name="sm_record_hint">注:运动监测是直接在表上进行测试的运动轨迹，卡路里和步数等;活动监测是在APP设置后,同步到腕表上进行测试的运动轨迹,卡路里和步数等。</string>
+    <string name="week_data">周数据</string>
+    <string name="month_data">月数据</string>
+    <string name="custom_data">自定义数据</string>
+    <string name="ps_measure_trend">收缩压测量趋势图</string>
+    <string name="ps_measure">收缩压测量</string>
+    <string name="pd_measure_trend">舒张压测量趋势图</string>
+    <string name="pd_measure">舒张压测量</string>
+    <string name="pr_measure">脉搏测量趋势图</string>
+    <string name="pr_measure_trend">脉搏测量</string>
+    <string name="cal_measure">卡路里测量趋势图</string>
+    <string name="cal_measure_trend">卡路里测量</string>
+
+    <!-- 数据记录界面 -->
+    <string name="self_defined">自定义</string>
+    <string name="test_time">测量时间</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="the_date_no_data">这个日期没有测试数据</string>
+    <string name="pr_data_ana_exception">脉搏数据解析异常</string>
+    <string name="sv">每搏血量</string>
+    <string name="co">心输出量</string>
+    <string name="tpr">总周阻</string>
+    <string name="ac">动脉顺应度</string>
+    <string name="stype">启动方式</string>
+
+
+    <!-- 个人信息界面 -->
+    <string name="auto">自动</string>
+    <string name="manual">手动</string>
+    <string name="data_record">数据记录</string>
+    <string name="detailed_info">详细信息</string>
+    <string name="name">姓名</string>
+    <string name="password">密码</string>
+    <string name="national">民族</string>
+    <string name="sex">性别</string>
+    <string name="birthday">出生日期</string>
+    <string name="education">教育</string>
+    <string name="is_married">婚姻</string>
+    <string name="is_work">工作状况</string>
+    <string name="professional">职业</string>
+    <string name="id_type">证件类型</string>
+
+    <string name="id_number">证件编号</string>
+    <string name="insurance_id">社保号</string>
+    <string name="ID_card">身份证</string>
+    <string name="email">电子邮箱</string>
+
+    <string name="blood_type">血型</string>
+    <string name="ps">收缩压</string>
+    <string name="pd">舒张压</string>
+    <string name="pr">脉搏</string>
+    <string name="waist">腰围</string>
+    <string name="address">地址</string>
+    <string name="myemail">邮箱</string>
+    <string name="phone">电话</string>
+    <string name="myphone">手机</string>
+    <string name="company">公司</string>
+    <string name="mobilephone">移动电话</string>
+    <string name="otherphone">其他电话</string>
+    <string name="myqq">QQ号码</string>
+    <string name="postcode">邮政编码</string>
+
+    <string name="personal_ill_history">个人病史</string>
+    <string name="infection_history">传染病史</string>
+    <string name="psychosis_history">精神病史</string>
+    <string name="tumour">肿瘤</string>
+    <string name="operated">手术</string>
+    <string name="injury">重大外伤</string>
+    <string name="transfusion">输血</string>
+    <string name="heritable_disease">遗传病史</string>
+    <string name="orther">其他</string>
+
+
+    <string name="ps_input_hint">请输入正常的收缩压范围（90-180）</string>
+    <string name="pd_input_hint">请输入正常的舒张压范围(60-100)</string>
+    <string name="pb_input_hint">请确认收缩压高于舒张压</string>
+
+
+    <!-- 菜单栏 -->
+    <string name="male">男</string>
+    <string name="female">女</string>
+
+    <!-- 提示语 -->
+    <string name="not_null">此信息不能为空</string>
+    <string name="show_date">没有更多数据可以显示了</string>
+    <string name="health_state_ins">您当前经过健康评估</string>
+    <string name="health_on">正处于</string>
+    <string name="health_state">健康状态</string>
+    <string name="network_exception">网络不给力啊！</string>
+    <string name="other_exception">网络不给力</string>
+    <string name="complete_info">请填写完整信息</string>
+    <string name="network_is_not_connected">当前没有网络连接</string>
+    <string name="duv_title">有最新的软件包，请下载！</string>
+    <string name="data_ana_exception">数据解析异常</string>
+    <string name="no_data">没有数据</string>
+    <!--&lt;!&ndash; 蓝牙温度 &ndash;&gt;-->
+    <!--<string name="qr_scan_not_found_hint">请确保该温度贴为打开状态！</string>-->
+    <!--<string name="sensors_stop_test">全部结束测量</string>-->
+    <!--<string name="sensors_start_test">全部开始测量</string>-->
+
+    <!--<string name="alarm_max_title">高温提示</string>-->
+    <!--<string name="alarm_min_title">低温提示</string>-->
+    <!--<string name="alarm_max">已到达高温！</string>-->
+    <!--<string name="alarm_min">已达到低温！</string>-->
+    <!--<string name="sensors_user">使用者</string>-->
+    <!--<string name="sensors_name">名称</string>-->
+    <!--<string name="sensors_max">最高值</string>-->
+    <!--<string name="sensors_min">最低值</string>-->
+    <!--<string name="value_hint">请输入温度值</string>-->
+    <!--<string name="sensors_alarm_hint">当测量的温度值超过或低于设定的界限值时将会出现报警提醒</string>-->
+    <!--<string name="sensors_stored_all_delete">全部删除</string>-->
+    <!--<string name="sensors_new_all_add">全部添加</string>-->
+    <!--<string name="double_sensors_add_hint">您已添加了两个温度贴</string>-->
+    <!--<string name="thermometer_test">温度检测</string>-->
+    <!--<string name="sensors_list">温度贴列表</string>-->
+
+    <!--<string name="one_sensor">单个温度贴片</string>-->
+    <!--<string name="two_sensors">左右温度贴片</string>-->
+    <!--<string name="left_sensors">左侧贴片</string>-->
+    <!--<string name="right_sensors">右侧贴片</string>-->
+    <!--<string name="more_sensors">多个温度贴片</string>-->
+
+    <!--<string name="sensors_record">全部温度测量历史记录</string>-->
+    <!--<string name="thremometer_record">温度记录</string>-->
+
+    <!--<string name="sensors_match">蓝牙配对</string>-->
+    <!--<string name="sensors_stored_ins">已配对的温度贴片</string>-->
+    <!--<string name="sensors_new_ins">监测到的新的温度贴片</string>-->
+
+
+    <!--<string name="edt_hint">请输入自定义名称</string>-->
+    <!--<string name="scan_hint">请确定扫描的是温度贴上的二维码！</string>-->
+    <!--<string name="scan_title">二维码扫描</string>-->
+
+    <!--<string name="lowhum_hint">温度过低</string>-->
+    <!--<string name="highhum_hint">温度过高</string>-->
+
+    <!--<string name="hum">温度</string>-->
+    <!--<string name="progress"></string>-->
+    <!--<string name="bt">蓝牙适配器</string>-->
+    <!--<string name="nodevice">未在可识别范围内找到感应标签。请按下感应标签侧面的开关以开始标签宣传。</string>-->
+    <!--<string name="image">图片</string>-->
+    <!--<string name="button_scan">扫描</string>-->
+    <!--<string name="ble_not_supported">不支持低功耗蓝牙</string>-->
+    <!--<string name="bt_not_supported">不支持蓝牙</string>-->
+    <!--<string name="bt_on">蓝牙已打开</string>-->
+    <!--<string name="bt_not_on">蓝牙未打开</string>-->
+    <!--<string name="app_closing">正在退出蓝牙低功耗感应标签</string>-->
+    <!--<string name="scan_advice">安卓设备无法扫描。请点击扫描按钮以扫描感应标签。</string>-->
+    <!--<string name="connect">连接</string>-->
+
+
+    <!--<string-array name="device_filter">-->
+    <!--<item>SensorTag</item>-->
+    <!--<item>SensorTag2</item>-->
+    <!--</string-array>-->
+
+
+    <!--<string name="start_periodic_scan_br_label">Start periodic scan Broadcast Receiver</string>-->
+    <!--<string name="stop_periodic_scan_br_label">Stop periodic scan Broadcast Receiver</string>-->
+    <!--<string name="scaner_br_label">Scanner Broadcast Receiver</string>-->
+
+    <!--<string name="no_sensors_stored">You have 0 temperature sensors.</string>-->
+    <!--<string name="no_ble">Device doesn\'t have BLE support!</string>-->
+
+    <!--<string name="menu_settings">Settings</string>-->
+    <!--<string name="menu_add">Find new device</string>-->
+    <!--<string name="menu_graph">View as graph</string>-->
+    <!--<string name="menu_list">View as list</string>-->
+    <!--<string name="menu_remove">Remove sensor</string>-->
+    <!--<string name="menu_show_period">Zoom to&#8230;</string>-->
+    <!--<string name="menu_day">1 Day</string>-->
+    <!--<string name="menu_week">1 Week</string>-->
+    <!--<string name="menu_month">1 Month</string>-->
+    <!--<string name="menu_all">Show all</string>-->
+
+    <!--<string name="scanning">Scanning for sensors&#8230;</string>-->
+
+
+    <!--<string name="status_updated">Recently updated</string>-->
+    <!--<string name="status_not_found">Not in range</string>-->
+
+    <!--<string name="graph_title">Temperature</string>-->
+    <!--<string name="battery">%.2f</string>-->
+    <!--<string name="temp">%.2f</string>-->
+    <!--<string name="temp_unit">%.2f°C</string>-->
+    <!--<string name="datetime">%1$te %1$tb %1$tR</string>-->
+    <!--<string name="time">%tR</string>-->
+    <!--<string name="bledate">%1$te %1$tb</string>-->
+
+    <!--<string name="alert_remove_sensor_msg">All sensor data will be lost. Do you want to proceed?</string>-->
+    <!--<string name="about_title">About</string>-->
+
+    <!--<string name="thremometer_record_set">温度记录设置</string>-->
+
+
+    <!-- 修改密码界面 -->
+    <string name="change_password">&#160;&#160;修改密码</string>
+    <string name="original_password_tv">&#160;&#160;原始密码</string>
+    <string name="original_password_edt">请输入您的原始密码</string>
+    <string name="new_password_tv">&#160;&#160;新密码&#160;&#160;&#160;&#160;</string>
+    <string name="new_password_edt">请输入您的新密码</string>
+    <string name="new_password_again_tv">&#160;&#160;密码确认</string>
+    <string name="new_password_again_edt">请再一次输入您的新密码</string>
+    <string name="ok_to_change_tv">确认修改</string>
+    <string name="op_is_wrong">原始密码错误！</string>
+    <string name="np_do_no_same">两次输入密码不一致！</string>
+    <string name="message_is_wrong">信息填写有误，请重新输入！</string>
+    <string name="message_is_empty">您有尚未填写的内容！</string>
+
+    <!-- 系统设置界面 -->
+    <string name="password_cell_phone">密保手机</string>
+    <string name="reset_password">密码重新设置</string>
+    <string name="activition">激活</string>
+    <string name="user_feedback">用户反馈</string>
+    <string name="user_feedback_hint">请填写您遇到的问题或您想反馈的内容！</string>
+    <string name="about_company">关于我们</string>
+    <string name="quit_account">退出当前账号</string>
+    <string name="submit">提交</string>
+
+    <!--本地字符串 -->
+    <string name="press_to_exit">再按一次退出</string>
+    <string name="x_date">日期</string>
+    <string name="update_time">更新于</string>
+    <string name="cancel_config">取消头像设置</string>
+    <string name="personal_information">个人信息</string>
+    <string name="emergecy_contact">紧急联系</string>
+    <string name="jwotch_information">腕表信息</string>
+    <string name="dialog_message">加载中。。。</string>
+    <string name="id_date_error">身份证的出生日期无效</string>
+    <string name="id_num_error">身份证号码不正确！</string>
+    <string name="datedialog_title">设置日期</string>
+    <string name="progressbar_text">卡路里量</string>
+    <string name="timedialog_title">设置时间</string>
+
+    <string name="frequency">(次/分钟)</string>
+    <string name="loading_text">加载中.....</string>
+
+    <!-- 公用名词 -->
+    <string name="inactivated">未激活</string>
+    <string name="dialog_date_set_title">请设置日期</string>
+    <string name="dialog_time_set_title">请设置时间</string>
+    <string name="timing_set">设置温度上传时间间隔</string>
+    <string name="hr_query_hint">心率测量记录起止查询时间</string>
+    <string name="bp_query_hint">血压测量查询时间</string>
+    <string name="start_date">开始日期</string>
+    <string name="end_date">截止日期</string>
+    <string name="query">查询</string>
+    <string name="measure_pulse_txt">心率测量</string>
+    <string name="dtt_title">设置定时上传时间间隔</string>
+    <string name="heart_title">设置心率监测时间间隔</string>
+    <string name="blood_pressure_monitor">一键测量血压</string>
+    <string name="blood_pressure_title">设置血压监测时间间隔</string>
+    <string name="heartrate_set">设置心率监测时间间隔</string>
+    <string name="heartrate_monitor">一键测量心率</string>
+    <string name="ok">确认</string>
+    <string name="mycancel">取消</string>
+    <string name="save">保存</string>
+    <string name="modify">修改</string>
+    <string name="delete">删除</string>
+    <string name="add_success">添加成功</string>
+    <string name="add_fail">添加失败</string>
+    <string name="update_success">修改成功</string>
+    <string name="update_fail">修改失败</string>
+    <string name="delete_success">删除成功</string>
+    <string name="send_success">发送成功</string>
+    <string name="tgou_data_error">数据加载失败</string>
+
+
+    <!-- 异常提示 -->
+    <string name="null_warning">用户名或密码不能为空!</string>
+
+    <!-- 用户列表界面 -->
+    <string name="search_text_hint">请输入需要搜索的用户名</string>
+    <string name="list_item_type1">用户ID</string>
+    <string name="list_item_type2">姓名</string>
+    <string name="list_item_type3">腕表号</string>
+
+
+    <string name="birth">出生日期</string>
+    <string name="eduction">教育</string>
+    <string name="marry">婚姻状况</string>
+    <string name="work_state">工作状况</string>
+    <string name="profession">职业</string>
+    <string name="card_type">证件类型</string>
+    <string name="card_id">证件编号</string>
+
+
+    <string name="jwotch_id">JWotchID</string>
+    <string name="phone_number">腕宝号码</string>
+    <string name="product_model">腕表类型</string>
+    <string name="serial_number">IMEI号</string>
+    <string name="status">状态</string>
+
+
+    <!-- 健康信息界面 -->
+
+    <string name="oxygen">血氧</string>
+    <string name="temperature_one">体温1</string>
+    <string name="temperature_two">体温2</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    <string name="waistline_unit_info">腰围</string>
+
+
+    <!-- 主界面 -->
+    <string name="doctor_name">李医生</string>
+    <string name="classify">分类</string>
+    <string name="all_label">全部标签</string>
+    <string name="label">标签</string>
+    <string name="all">全部</string>
+    <string name="normal">正常</string>
+    <string name="unnaomal">异常</string>
+    <string name="cure">确 定</string>
+    <string name="date_set">设置日期</string>
+    <string name="cancle">取 消</string>
+    <string name="patient">患</string>
+    <string name="hypertension">高血压</string>
+    <string name="pb_unit">(mmHg):</string>
+
+    <string name="oxygen_unit">(mmol/L):</string>
+    <string name="temperature_unit">(℃):</string>
+
+
+    <string name="measure_record">测量记录</string>
+
+    <string name="blood_measure_record">血压测量记录</string>
+
+    <string name="ps_and_unit">收缩压:</string>
+    <string name="pd_and_unit">舒张压:</string>
+    <string name="hr_and_unit">脉率:</string>
+
+
+    <!-- 提示语 -->
+
+    <string name="health_on_status">健康状态</string>
+    <string name="health_state_worn">亚健康状态</string>
+    <string name="health_state_ok">健康状态</string>
+    <string name="health_state_no">不健康状态</string>
+    <string name="calorie">卡路里</string>
+    <string name="pluse">心率</string>
+    <string name="height_size">cm</string>
+    <string name="weight_size">kg</string>
+    <string name="pulse">脉搏</string>
+    <string name="systolic_pressure">收缩压</string>
+    <string name="diastolic_pressure">舒张压</string>
+    <string name="heart_record">心率测量记录</string>
+    <string name="blood_record">血压</string>
+    <string name="heart_record_size">次/分钟</string>
+
+    <string name="bloodrate_set">设置血压监测时间间隔</string>
+
+
+    <!-- 控制中心字符串数据 -->
+    <string name="query_hint">心率测量记录起止查询时间</string>
+    <string name="blood_title">设置血压监测时间间隔</string>
+
+
+    <string name="ft">华氏温度值</string>
+
+    <string name="ct">摄氏温度值</string>
+
+
+    <!-- 三方数据 -->
+    <string name="bg">血糖</string>
+
+    <string name="bo">血氧</string>
+    <string name="target_weight">目标体重</string>
+    <string name="measure_weight">测量体重</string>
+    <string name="body_fat">体脂肪率</string>
+
+    <string name="basic_metabolism">基础代谢</string>
+    <string name="visceral_fat_level">内脏脂肪等级</string>
+    <string name="bone_mass">骨量</string>
+    <string name="muscle">肌肉</string>
+    <string name="human_impedance">人体阻抗</string>
+    <string name="water">水分</string>
+    <string name="disease_info">疾病信息</string>
+    <string name="input_disease_info">请输入疾病信息</string>
+    <string name="disease_list">疾病列表</string>
+
+    <!-- 疾病信息 -->
+    <string name="disease_detail_info">疾病详细信息</string>
+    <string name="disease_symptom">相关病状</string>
+    <string name="disease_symptom_text">病状描述</string>
+    <string name="disease_text">疾病描述</string>
+    <string name="disease_cause">疾病原因</string>
+    <string name="disease_care">预防护理</string>
+    <string name="disease_drug">相关药品</string>
+    <string name="disease_food">相关食物</string>
+    <string name="disease_check">相关检查</string>
+    <string name="disease_relation">相关疾病</string>
+    <string name="username">用户名</string>
+    <string name="old_password">原密码</string>
+    <string name="new_password">新密码</string>
+    <!-- 注册界面 -->
+    <string name="password_cure">密码确认</string>
+
+    <string name="register_username_edt">请输入用户名</string>
+    <string name="login_again_password_edt">请再一次输入确认密码</string>
+    <string name="register_name_edt">请输入您的真实姓名</string>
+    <string name="register_name_exit">用户名已存在，请重新输入!</string>
+    <string name="register_name_able">用户名可用!</string>
+    <string name="register_name_null">用户名不能为空!</string>
+    <string name="register_password_null">密码不能为空!</string>
+    <string name="set_password_worn">新旧密码不能一致</string>
+    <string name="set_againpassword_worn">密码不一致</string>
+    <string name="new_password_worn">旧密码错误，请重新输入!</string>
+    <string name="register_password_worn">密码只能以字母开头，长度6~18的字符，数字或者下划线</string>
+    <string name="register_pasword_cure">两次输入密码不一致</string>
+    <string name="register_info">请填写完整信息</string>
+    <string name="register_phone_edt">请输入您的联系方式</string>
+    <string name="register_email">联系邮件</string>
+    <string name="register_email_edt">请输入您的联系邮件</string>
+
+    <string name="register_address">联系地址</string>
+    <string name="register_address_edt">请输入您的联系地址</string>
+    <string name="agreement_register">同意《随访助手》协议</string>
+    <string name="doctor_name_hint">请输入您的姓名</string>
+    <string name="doctor_hospital_hint">请选择您所在的医院</string>
+    <string name="doctor_department_hint">请选择您所在的科室</string>
+
+    <!-- 医生注册-->
+    <string name="doctor_title_hint">请选择您的职称</string>
+    <string name="doctor_phone_hint">请输入您的联系电话</string>
+    <string name="doctor_adept_hint">请输入您擅长的内容</string>
+    <string name="doctor_resume_hint">请输入您的个人介绍</string>
+    <string name="hospital">医院</string>
+    <string name="hospital_hint">手动输入医院</string>
+    <string name="department">科室</string>
+    <string name="department_hint">手动输入科室</string>
+
+    <string name="job_title">职称</string>
+    <string name="register_phone">联系电话</string>
+    <string name="expert">擅长</string>
+    <string name="personal_introduction">个人介绍</string>
+    <string name="next_step">下一步</string>
+    <string name="set_hospital_hint">选择医院前，请先选择医院的所在城市</string>
+    <string name="doctor_register">医生注册</string>
+    <string name="input_graph_code">请输入图形验证码</string>
+    <string name="input_sms_code">请输入短信验证码</string>
+
+    <string name="get_sms_code">获取短信验证码</string>
+    <string name="set_password">请设置密码</string>
+    <string name="set_password_again">请再次输入密码</string>
+    <string name="register_hint">点击注册，即表明同意《随护助手协议》</string>
+    <string name="register_protocol">《随护助手协议》</string>
+    <string name="register_success">恭喜,您已成功注册!</string>
+    <string name="register_sucess_hint">请务必提交您的医生资质等相关资料以供审核，谢谢您的配合。</string>
+    <string name="register_sucess_btn">提交资料</string>
+    <string name="perfect_personal_info">完善个人信息</string>
+
+    <string name="doctor_certificate">医师执业证书</string>
+    <string name="reference_sample">参考示例</string>
+    <string name="certificate_info">职业证书</string>
+    <string name="submit_check">提交审核</string>
+    <string name="certificate_hint">点击上传照片，上传的照片形式请参考示例进行拍摄，证件上的所有信息必须清晰可识别，大小不超过2M。</string>
+    <string name="doctor_result">资料提交成功，正在审核，请耐心等待。</string>
+    <string name="check_failed">您提交的资料审核未通过，原因是“你的姓名与证件资料不符合”，请重新编辑并提交。</string>
+    <string name="re_edit">重新编辑</string>
+    <string name="community_type">社保类别</string>
+    <string name="community_number">编号</string>
+    <string name="native_place">籍贯</string>
+    <string name="message">消息</string>
+
+    <!--社区评估服务-->
+    <string name="schedule">日程安排</string>
+    <string name="userlist">用户列表</string>
+    <string name="mine">我的</string>
+
+    <!--签约医生服务-->
+    <string name="apply_sign">申请签约</string>
+    <string name="refuse">拒绝</string>
+    <string name="agree">同意</string>
+    <string name="sign_message">申请签约</string>
+    <string name="phone_null">电话号码为空</string>
+    <string name="schedule_record">排班记录</string>
+    <string name="edit">编辑</string>
+    <string name="schedule_set">设置排班</string>
+
+    <string name="num_limit">人数限制</string>
+
+    <!--预约排班-->
+    <string name="schedule_type">预约类型</string>
+    <string name="pic_text">图文咨询</string>
+    <string name="video_audio">视话咨询</string>
+    <string name="hospital_treatment">医院就诊</string>
+    <string name="visit_service">上门服务</string>
+    <string name="hospiat_address">医院地址</string>
+    <string name="one">一</string>
+    <string name="two">二</string>
+    <string name="three">三</string>
+    <string name="four">四</string>
+    <string name="five">五</string>
+    <string name="six">六</string>
+    <string name="seven">日</string>
+    <string name="all_select">全选</string>
+    <string name="schedule_ins">预约排班设置说明:\n显示给患者的预约时间是从今天开始的一周时间内。\n医生设置预约的时间为从今日开始的两周时间内。即医生必须提前一周设定好本周的预约时间。\n本周的预约排班设定好，则不允许更改。选择医院就诊，必须选择所就诊的医院地址。</string>
+    <string name="schedule_list">预约咨询</string>
+    <string name="data_exception">数据异常</string>
+    <string name="exception_today">今日</string>
+
+    <string name="exception_week">一周</string>
+
+    <string name="exception_month">一月</string>
+    <string name="exception_other">其他时间</string>
+
+    <string name="special_care">特别关心</string>
+
+    <!--数据异常用户-->
+    <string name="else_class">其他分类</string>
+    <string name="late_service">最近服务</string>
+    <string name="late_add">最近添加</string>
+    <string name="late_browse">最近浏览</string>
+    <string name="people_unit">人</string>
+
+    <string name="search_user_hint">请输入患者姓名,账号，腕表号</string>
+
+    <string name="suggestion_guide">建议指导</string>
+    <string name="add_pic">添加照片</string>
+    <string name="data_heart_rate">心率(次/分钟)</string>
+    <string name="data_blood_pressure">收缩压/舒张压(mmHg)</string>
+    <string name="data_blood_oxygen">血氧(%)</string>
+    <string name="data_step">计步(步)</string>
+
+    <string name="data_calorie">卡路里(kcal)</string>
+    <string name="data_blood_sugar">血糖(mmol/L)</string>
+    <!--1 一体机；2 客户输入；-->
+    <!--3 腕表数据；4 血糖仪；-->
+    <!--5 新血糖仪； 6 电子称；-->
+    <!--7 体温计；8血压计；-->
+    <!--9 血氧仪；10 耳温枪；-->
+    <!--11 体脂仪；12 MP011;-->
+    <!--13 医生输入；14 客服输入；-->
+    <string name="data_temperature">体温(℃)</string>
+    <string name="data_weight">体重(kg)</string>
+    <!--患者信息-->
+    <string name="data_fat">脂肪率(%)</string>
+    <string name="data_water">水分率(%)</string>
+
+    <string name="data_muscle">肌肉率(%)</string>
+    <string name="data_bones">骨骼重量(kg)</string>
+    <string name="data_metabolism">基础代谢(kcal)</string>
+    <string name="data_preview">数据预览</string>
+    <string name="title_activity_exception_record">ExceptionRecordActivity</string>
+    <string name="remark">备注</string>
+    <string name="patient_info">患者信息</string>
+    <string name="finish">完成</string>
+    <string name="input_remark_info">请输入备注信息</string>
+    <string name="history_record">历史记录</string>
+    <string name="input_suggestion">恭喜，您已完成了本次看诊记录。为了病人更好的康复，有好的指导建议不妨说一下吧~</string>
+    <string name="source">来源</string>
+    <string name="current_data">当前数据</string>
+
+
+    <string name="reference_range">参考范围</string>
+    <string name="title_activity_schedule_set">ScheduleSetActivity</string>
+    <string name="title_activity_data_input">DataInputActivity</string>
+    <string name="title_activity_sign_list">SignListActivity</string>
+    <string name="title_activity_remark_record">RemarkRecordActivity</string>
+    <string name="title_activity_doctor_personal_set">DoctorPersonalSetActivity</string>
+    <string name="secure_center">安全中心</string>
+    <string name="password_update">密码修改</string>
+
+    <!--异常记录-->
+    <string name="update_phone_hint">更改手机号码不影响您的信用认证，身份认证等账户信息，更改后，请用新的手机号登录。</string>
+    <string name="hospital_address">医院地址</string>
+    <string name="message_center">消息中心</string>
+    <string name="schedule_remind">日程提醒</string>
+    <string name="sign_remind">签约申请提醒</string>
+    <string name="new_msg_remind">新消息提醒</string>
+    <string name="donot_disturb_remind">免打扰(22:00-次日07:00)</string>
+    <string name="help_center">帮助中心</string>
+    <!--医生个人设置-->
+    <string name="contact_service">联系客服</string>
+    <string name="service_phone">0573-82692668</string>
+    <string name="submit_feedback">意见反馈</string>
+    <string name="exit_app">退出登录</string>
+    <string name="title_activity_hospital_address_list">HospitalAddressListActivity</string>
+    <string name="add_hospital">添加新医院地址</string>
+    <string name="title_activity_add_hospital">AddHospitalActivity</string>
+    <string name="hospital_name">医院名称</string>
+    <string name="province">省份</string>
+    <string name="city">城市</string>
+    <string name="local_area">所在地区</string>
+    <string name="street">街道</string>
+    <string name="detail_address">详细地址</string>
+    <string name="set_defalut">设置默认</string>
+    <string name="service_record">服务记录</string>
+    <string name="counts">统计</string>
+    <string name="service_counts">服务统计</string>
+    <string name="input_words">请输入关键字</string>
+    <string name="types">类别</string>
+    <string name="times">次数</string>
+    <string name="notice_record">公告记录</string>
+    <string name="add_notice">新公告</string>
+    <string name="problem_suggestion">问题和意见</string>
+    <string name="problem_hint">请输入不少于10字的描述</string>
+    <string name="provide_images">请提供相关问题的截图和照片</string>
+    <string name="feedback_phone_hint">(必填)请留下您的电话，方便我们联系您。</string>
+    <string name="notice_title">请输入标题(必填)</string>
+    <string name="notice_content">请输入内容(必填)</string>
+    <string name="contrast">对比</string>
+    <string name="curve">曲线</string>
+    <string name="height_unit">身高(cm)</string>
+    <string name="weight_unit">体重(kg)</string>
+
+    <string name="bmi">BMI</string>
+    <string name="ps_unit">收缩压(mmHg)</string>
+    <string name="pd_unit">舒张压(mmHg)</string>
+    <string name="pulse_unit">脉率(次/分)</string>
+
+    <string name="fat_unit">体脂肪率(%)</string>
+    <string name="bm_unit">基础代谢(kcal)</string>
+
+    <string name="physique">体质</string>
+
+    <string name="shape">体型</string>
+
+    <string name="waistline_unit">腰围(cm)</string>
+    <string name="hipline_unit">臀围(cm)</string>
+
+    <string name="whr_unit">腰臀比(%)</string>
+
+    <string name="tempera_unit">体温(℃)</string>
+    <string name="hr">心率</string>
+    <string name="bloodsugar_unit">血糖(mmol/L)</string>
+    <string name="ua_unit">尿酸(mmol/L)</string>
+    <string name="chol_unit">总胆固醇(mmol/L)</string>
+    <string name="fat">体脂肪率</string>
+    <string name="bm">基础代谢</string>
+    <string name="waistline">腰围</string>
+    <string name="hipline">臀围</string>
+    <string name="whr">腰臀比</string>
+    <string name="tempera">体温</string>
+
+    <string name="bloodsugar">血糖</string>
+    <string name="blood_oxygen">血氧</string>
+    <string name="ua">尿酸</string>
+    <string name="chol">总胆固醇</string>
+    <string name="search">搜索</string>
+    <string name="hd_data_title">便携设备</string>
+    <string name="machine_data">体检设备</string>
+
+    <string name="machine_data_title">曲线-体检数据</string>
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+    <string name="title_activity_suggestion_record">SuggestionRecordActivity</string>
+
+
+    <string name="title_activity_service_list">ServiceListActivity</string>
+    <string name="title_activity_notice_list">NoticeListActivity</string>
+    <string name="title_activity_service_counts">ServiceCountsActivity</string>
+
+
+    <string name="title_activity_add_notice">AddNoticeActivity</string>
+    <string name="title_activity_hd_data">HdDataActivity</string>
+    <string name="title_activity_machine_data">MachineDataActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_schedule_list">ScheduleListActivity</string>
+    <string name="title_activity_suggestion_info">SuggestionInfoActivity</string>
+    <string name="title_activity_data_input_record">DataInputRecordActivity</string>
+    <string name="title_activity_data_input_record_info">DataInputRecordInfoActivity</string>
+    <string name="title_activity_doctor_personal_info">DoctorPersonalInfoActivity</string>
+
+    <string name="title_activity_personal_address">PersonalAddressActivity</string>
+    <string name="applicant">申请人</string>
+    <string name="assessment_report">评估记录</string>
+    <string name="assessment_order">预约评估</string>
+    <string name="system_code">商户编码</string>
+    <string name="input_system_code">请输入商户编码</string>
+    <string name="system_code_hint">联系商家，获得6位数字的编码</string>
+    <string name="title_activity_contrast_data">ContrastDataActivity</string>
+    <string name="title_activity_doctor_qrcode">DoctorQrcodeActivity</string>
+    <string-array name="user_function_list_group">
+        <item>查看信息</item>
+        <item>健康数据</item>
+        <item>工具</item>
+        <item>控制面板</item>
+        <item>发送信息</item>
+    </string-array>
+    <string-array name="sex_array">
+        <item>男</item>
+        <item>女</item>
+        <item>保密</item>
+    </string-array>
+    <string-array name="marry_array">
+        <item>未婚</item>
+        <item>已婚</item>
+        <item>离异</item>
+        <item>丧偶</item>
+    </string-array>
+    <string-array name="work_array">
+        <item>已就业</item>
+        <item>已失业</item>
+        <item>已退休</item>
+    </string-array>
+    <string-array name="id_type_array">
+        <item>身份证</item>
+        <item>护照</item>
+        <item>驾照</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="control_center_array">
+        <item>发送报警</item>
+        <item>自动接听</item>
+        <item>同步定时提醒列表</item>
+        <item>下载通讯录</item>
+        <item>定位</item>
+        <item>重新启动</item>
+        <item>自动开关机</item>
+        <item>基本信息</item>
+        <item>呼叫中心</item>
+        <item>同步亲人号码</item>
+        <item>同步活动计划</item>
+        <item>测量心率</item>
+        <item>同步采集心率自动启动时间间隔</item>
+        <item>测量血氧</item>
+        <item>同步采集血氧自动启动时间间隔</item>
+        <item>测量血压</item>
+        <item>同步采集血压自动启动时间间隔</item>
+    </string-array>
+
+    <string-array name="control_center_array_cmd">
+        <item>JDOCTOR_ALARM</item>
+        <item>JDOCTOR_AUTOCALLBACK</item>
+        <item>JDOCTOR_DOWNLOAD_REMIND_LIST</item>
+        <item>JDOCTOR_DOWNLOADCONTACT</item>
+        <item>JDOCTOR_OPENGPS</item>
+        <item>JDOCTOR_RESTART</item>
+        <item>JDOCTOR_SYNCH_AUTOSTARTSTOPTIME</item>
+        <item>JDOCTOR_SYNCH_BASE_INFO</item>
+        <item>JDOCTOR_SYNCH_HEALTHNUMBER</item>
+        <item>JDOCTOR_SYNCH_RELATIVES_CONTACT</item>
+        <item>JDOCTOR_SYNCH_SPORT_PLAN</item>
+        <item>JDOCTOR_OPEN_HEARTRATE</item>
+        <item>JDOCTOR_SYNCH_HEARTRATE_PERIOD</item>
+        <item>JDOCTOR_OPEN_BLOODOXYGEN</item>
+        <item>JDOCTOR_SYNCH_BLOODOXYGEN_PERIOD</item>
+        <item>JDOCTOR_OPEN_BLOODPRESSURE</item>
+        <item>JDOCTOR_SYNCH_BLOODPRESSURE_PERIOD</item>
+    </string-array>
+    <string-array name="third_data_array">
+        <item>血糖</item>
+        <item>血氧</item>
+        <item>血压</item>
+        <item>体脂</item>
+        <item>耳温枪</item>
+    </string-array>
+    <string-array name="job_title_arr">
+        <item>主任医师</item>
+        <item>副主任医师</item>
+        <item>主治医师</item>
+        <item>住院医师</item>
+    </string-array>
+
+    <string-array name="arr_data_source_record">
+        <item>医生输入</item>
+        <item>客户输入</item>
+        <item>客服输入</item>
+    </string-array>
+    <string-array name="arr_data_source">
+        <item>一体机</item>
+        <item>客户输入</item>
+        <item>腕表数据</item>
+        <item>血糖仪</item>
+        <item>新血糖仪</item>
+        <item>电子称</item>
+        <item>体温计</item>
+        <item>血压计</item>
+        <item>血氧仪</item>
+        <item>耳温枪</item>
+        <item>体脂仪</item>
+        <item>MP011</item>
+        <item>医生输入</item>
+        <item>客服输入</item>
+        <item>APP上传</item>
+    </string-array>
+    <string-array name="patient_function_arr">
+        <item>发消息</item>
+        <item>视频</item>
+        <item>电话</item>
+        <item>数据录入</item>
+        <item>预约记录</item>
+        <item>指导记录</item>
+        <item>异常记录</item>
+        <item>健康报告</item>
+    </string-array>
+    <string-array name="data_input">
+        <item>心率</item>
+        <item>血压</item>
+        <item>血氧</item>
+        <item>计步</item>
+        <item>卡路里</item>
+        <item>血糖</item>
+        <item>体温</item>
+        <item>体重</item>
+        <item>脂肪率</item>
+        <item>水分率</item>
+        <item>肌肉率</item>
+        <item>骨骼重量</item>
+        <item>基础代谢</item>
+    </string-array>
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+</resources>

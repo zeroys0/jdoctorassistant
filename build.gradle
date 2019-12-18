@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'kotlin-android'
+android {
+//    signingConfigs {
+//        myKeystore {
+//            keyAlias 'androiddebugkey'
+//            keyPassword 'android'
+//            storeFile file('D:/工作文件夹/健康大使 相关资料/debug.keystore')
+//            storePassword 'android'
+//        }
+//    }
+    compileSdkVersion 28
+    buildToolsVersion '23.0.3'
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+
+    }
+    defaultConfig {
+        applicationId "com.jxj.jdoctorassistant"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 11
+        versionName '2.0'
+//        signingConfig signingConfigs.myKeystore
+        multiDexEnabled true
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+//            signingConfig signingConfigs.myKeystore
+        }
+    }
+    productFlavors {
+    }
+    dexOptions {
+//        incremental true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    sourceSets.main {
+        jni.srcDirs 'src/main/source'
+    }
+}
+//configurations {
+////    all*.exclude group: 'com.android.support', module: 'support-v4'
+//    all*.exclude group:'com.android.support', module:'support-appcompat'
+//}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/xUtils-2.6.14.jar')
+    implementation project(':base_library_pullToRefresh_chenyoca')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation files('libs/zxing.jar')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'pub.devrel:easypermissions:0.4.0'
+    testImplementation 'junit:junit:4.12'
+    implementation project(':easeui')
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.lzy.net:okgo:+'
+    implementation 'com.lzy.net:okrx2:+'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.lzy.net:okserver:+'
+
+    implementation 'com.just.agentweb:agentweb:4.0.2'
+}

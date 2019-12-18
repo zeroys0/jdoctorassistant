@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    tools:context="com.jxj.jdoctorassistant.main.doctor.userlist.HdDataActivity">
+    <include
+        android:id="@+id/ha_data_title"
+        layout="@layout/view_doctor_title_right_bar"
+        />
+    <com.jxj.jdoctorassistant.view.HorizontalListView
+        android:id="@+id/hd_data_hlv"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+
+    </com.jxj.jdoctorassistant.view.HorizontalListView>
+    <LinearLayout
+        android:id="@+id/hd_data_chart_ll"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+    </LinearLayout>
+    <WebView
+        android:id="@+id/webview"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="horizontal"
+        >
+
+    </WebView>
+    <ListView
+        android:id="@+id/hd_data_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </ListView>
+</LinearLayout>

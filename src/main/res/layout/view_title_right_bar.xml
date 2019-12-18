@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" 
+    android:background="@color/title_bg_color">
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+         >
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical" 
+        
+        >
+        <ImageView 
+	        android:layout_gravity="center_vertical" 
+	        android:id="@+id/back_igv"
+	        android:layout_marginLeft="10dp" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+    		android:scaleType="centerInside"
+	        android:src="@drawable/back" 
+        />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"        
+        >
+        <TextView
+	        android:id="@+id/title_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:textSize="20sp"
+	        android:gravity="center_vertical"
+	        android:textColor="@android:color/white" 
+	        />
+        </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        >
+        <ImageView 
+	        android:layout_gravity="center_vertical" 
+	        android:id="@+id/right_btn_igv"
+	        android:layout_marginRight="10dp" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+    		android:scaleType="centerInside" 
+        />
+			<TextView
+				android:id="@+id/right_btn_tv"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_marginRight="10dp"
+				android:visibility="gone"
+				android:layout_centerInParent="true"
+				android:gravity="center_vertical"
+				android:textSize="20sp"
+				android:textColor="@color/white"
+				/>
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+ 
+   
+
+
+
+</LinearLayout>

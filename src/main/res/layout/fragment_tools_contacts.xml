@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/gray_bg" >
+
+    <LinearLayout
+        style="@style/w_h_full"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/w_h_full"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+            <TextView
+                style="@style/w_h_full"
+                android:text="无权限查看"
+                android:textColor="@color/red"
+                android:textSize="24sp"
+                android:gravity="center"
+                />
+
+            <ListView
+                android:id="@+id/contacts_lv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/contacts_add_rl"
+                android:layout_alignParentTop="true" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/contacts_add_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/activity_bar"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/title_bar_text"
+                android:layout_marginTop="@dimen/margin"
+                android:visibility="gone"
+                android:background="@drawable/blue_bg" >
+
+                <TextView
+                    android:id="@+id/contacts_add_txt"
+                    style="@style/w_wrap_h_wrap"
+                    android:layout_centerInParent="true"
+                    android:text="@string/add_newcontacts"
+                    android:textColor="@color/white_bg"
+                    android:textSize="@dimen/title_bar_text" />
+
+                <ImageView
+                    style="@style/w_wrap_h_wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_bottom"
+                    android:layout_toLeftOf="@id/contacts_add_txt"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/remind_add" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

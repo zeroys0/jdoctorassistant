@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.jxj.jdoctorassistant.view.RoundImageView
+            android:id="@+id/doctor_user_rigv"
+            android:layout_width="@dimen/color_center_halo_radius"
+            android:layout_height="@dimen/color_center_halo_radius"
+            android:layout_marginTop="@dimen/margin"
+            imagecontrol:border_outside_color="@color/gray"
+            imagecontrol:border_thickness="@dimen/login_line_width" />
+        <TextView
+            android:id="@+id/doctor_user_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/doctor_user_rigv"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/doctor_user_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_user_name_tv"
+            android:layout_toRightOf="@+id/doctor_user_rigv"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/gray_87"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/doctor_user_symptom_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctor_user_info_tv"
+            android:layout_toRightOf="@+id/doctor_user_rigv"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+            />
+        <ImageView
+            android:id="@+id/doctor_user_ispay_igv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/special_care"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

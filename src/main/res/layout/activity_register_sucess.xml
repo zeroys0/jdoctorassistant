@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.register.RegisterSucessActivity"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="24dp"
+    android:text="@string/register_success"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="80dp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:maxWidth="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="@string/register_sucess_hint"
+        android:textSize="14dp"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_marginLeft="@dimen/title_bar_text"
+        android:layout_marginRight="@dimen/title_bar_text"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/blue_bg"
+        android:gravity="center"
+        android:text="@string/register_sucess_btn"
+        android:textColor="@color/white_bg"
+        android:textSize="20sp"
+        />
+</LinearLayout>

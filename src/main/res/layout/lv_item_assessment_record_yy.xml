@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:layout_margin="6dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                >
+
+                <TextView
+                    android:id="@+id/order_username_tv"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="杨健"
+                    android:textColor="@color/color5"
+                    android:textSize="19sp"
+                    />
+
+                <TextView
+                    android:id="@+id/order__assess_number_tv"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="3次评估"
+                    android:textSize="16sp"
+                    android:textColor="@color/color4"
+                    />
+
+
+                <TextView
+                    android:id="@+id/order__item1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="轻度"
+                    />
+
+
+                <!--用于标注程度  正常 轻度 重度  -->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                >
+
+                <RadioButton
+                    android:id="@+id/order_item1_zhidaoyuan_queren_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="指导员确认情况"
+                    android:textColor="@color/color3"
+                    />
+
+                <RadioButton
+                    android:id="@+id/order_item1_jiedao_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="街道审核情况"
+                    android:textColor="@color/color3"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                >
+
+                <RadioButton
+                    android:id="@+id/order_item1_zhidaoyuan_choucha_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:text="指导员抽查情况"
+                    android:textColor="@color/color3"
+                    />
+
+                <RadioButton
+                    android:id="@+id/order_item1_xiangqu_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:text="县区审核情况"
+                    android:textColor="@color/color3"
+                    />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- 评估编号 -->
+                <TextView
+                    android:id="@+id/order_item_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="10dp"
+                    android:text=""
+                    />
+                <!-- 评估 时间  -->
+                <TextView
+                    android:id="@+id/order_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="15dp"
+                    android:text=""
+                    />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/order_item1_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/level_zhongdu"
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

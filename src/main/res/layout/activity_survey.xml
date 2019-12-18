@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.jxj.jdoctorassistant.main.community.activity.questionnairesurvey.SurveyActivity">
+
+
+    <include
+        android:id="@+id/activity_survey_title"
+        layout="@layout/view_doctor_title_right_bar"/>
+    <!-- 这里是一个RadioButton 的5个按钮 下方是5个FramLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--上方的5个条目-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自理能力"
+                android:textColor="@color/app_blue"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="认知能力"
+                android:textColor="@color/colorblack"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="情绪能力"
+                android:textColor="@color/colorblack"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="视觉能力"
+                android:textColor="@color/colorblack"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="背景参数"
+                android:textColor="@color/colorblack"
+                android:textSize="14sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <!-- 10个问题  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--问题1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--问题 不用考虑 -->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="1.大便:"/>
+
+
+                </LinearLayout>
+
+                <!--答案 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/first_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/first_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="失禁或昏迷"/>
+
+                        <RadioButton
+                            android:id="@+id/first_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="偶尔失禁（每周小于1次）"/>
+
+                        <RadioButton
+                            android:id="@+id/first_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="能控制"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--小便-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="2.小便:"/>
+                </LinearLayout>
+
+                <!--TODO 答案-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/second_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/second_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="失禁或昏迷或需要他人导尿"/>
+
+                        <RadioButton
+                            android:id="@+id/second_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="偶尔失禁（每24h小于1次，每周大于1次）"/>
+
+                        <RadioButton
+                            android:id="@+id/second_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="能控制"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--3修饰-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="3.修饰:"/>
+                </LinearLayout>
+
+                <!--TODO 答案-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/third_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/third_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="需要帮助"/>
+
+                        <RadioButton
+                            android:id="@+id/third_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="独立洗脸、梳头、刷牙、剃须"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--4,如厕-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="4.如厕:"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/fourth_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/fourth_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="依赖他人"/>
+
+                        <RadioButton
+                            android:id="@+id/fourth_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="需部分辅助"/>
+
+                        <RadioButton
+                            android:id="@+id/fourth_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="自理"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--5.吃饭-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <!--问题-->
+                <LinearLayout
+                    style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="5.吃饭:"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/fifth_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/fifth_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="依赖他人"/>
+
+                        <RadioButton
+                            android:id="@+id/fifth_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="需部分辅助（夹菜、盛饭、切面包、抹黄油）"/>
+
+                        <RadioButton
+                            android:id="@+id/fifth_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="完全自理"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--6转移（轮椅）-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="6.转移（床椅）:"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/sixth_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/sixth_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="完全依赖他人，不能坐"/>
+
+                        <RadioButton
+                            android:id="@+id/sixth_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="能坐，但需大量（2人）辅助"/>
+
+                        <RadioButton
+                            android:id="@+id/sixth_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="能坐，但需少量（1人）辅助"/>
+
+                        <RadioButton
+                            android:id="@+id/sixth_answer_d_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="自理"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--7活动（步行）-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="7.活动（步行）:"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/seventh_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/seventh_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="不能步行"/>
+
+                        <RadioButton
+                            android:id="@+id/seventh_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="在轮椅上能独立行动"/>
+
+                        <RadioButton
+                            android:id="@+id/seventh_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="需一人辅助步行（体力或语言指导）"/>
+
+                        <RadioButton
+                            android:id="@+id/seventh_answer_d_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="独立步行（可用辅助器）"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--8穿衣-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="8.穿衣:"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/eighth_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/eighth_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="依赖他人"/>
+
+                        <RadioButton
+                            android:id="@+id/eighth_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="需一半辅助"/>
+
+                        <RadioButton
+                            android:id="@+id/eighth_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="自理（系、解纽扣，开闭拉链和穿鞋等）"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--9上楼梯-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"
+                        />
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="9.上楼梯:"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/ninth_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/ninth_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="不能"/>
+
+                        <RadioButton
+                            android:id="@+id/ninth_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="需帮助（体力或语言指导）"/>
+
+                        <RadioButton
+                            android:id="@+id/ninth_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="自理"/>
+
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <!--10洗澡-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="10.洗澡:"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/tenth_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/tenth_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="依赖他人"/>
+
+                        <RadioButton
+                            android:id="@+id/tenth_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="自理"/>
+
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--分数  结论  与提交 按钮-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/gray_bg"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="20dp"
+                        android:text="得分总结"/>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/all_score_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="@color/black"
+                            android:textSize="36sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/zilinengli_jielun_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自理"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/survey_submit_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/yy_btn_bg">
+
+                        <TextView
+
+                            style="@style/w_wrap_h_wrap"
+                            android:layout_centerInParent="true"
+                            android:text="下一项"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

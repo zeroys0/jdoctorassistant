@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jxj.jdoctorassistant.main.register.DepartmentListActivity">
+<include
+    android:id="@+id/department_list_title"
+    layout="@layout/view_title_right_bar">
+
+</include>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/department_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/department_hint"
+            android:layout_marginRight="100dp"/>
+        <Button
+            android:id="@+id/department_edit_btn"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:background="@drawable/button_blue_bg"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/department_1_rv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/department_2_rv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:scrollbars="none"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/department_list_load_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.jxj.jdoctorassistant.view.CustomClipLoading
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.jxj.jdoctorassistant.view.CustomClipLoading>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

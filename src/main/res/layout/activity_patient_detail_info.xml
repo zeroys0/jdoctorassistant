@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jxj.jdoctorassistant.main.doctor.userlist.PatientDetailInfoActivity">
+
+    <include
+        android:id="@+id/patient_detail_info_title"
+        layout="@layout/view_doctor_title_right_bar"/>
+    <RadioGroup
+        android:id="@+id/patient_detail_info_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white"
+        >
+        <RadioButton
+            android:id="@+id/patient_detail_info_personal_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/exception_user_date_rb_bg"
+            android:text="@string/personal_information"
+            android:textColor="@color/blue_black_rb_tc"
+            android:gravity="center"
+            android:padding="10dp"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/patient_detail_info_remark_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/exception_user_date_rb_bg"
+            android:text="@string/remark"
+            android:textColor="@color/blue_black_rb_tc"
+            android:gravity="center"
+            android:padding="10dp"
+            android:checked="false"
+            />
+
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/patient_detail_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+</LinearLayout>

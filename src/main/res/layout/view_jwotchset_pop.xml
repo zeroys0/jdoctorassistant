@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full" >
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/fragment_sports_plan_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pop_window_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/w_full_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+             android:layout_marginTop="15dp"
+            android:padding="10dp" >
+
+            <CheckBox
+                android:id="@+id/sport_jwotch_set_myself_mon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Monday"
+                android:textColor="@color/cycle_cb_tc"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/sport_jwotch_set_myself_tue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Tuesday"
+                android:textColor="@color/cycle_cb_tc"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/sport_jwotch_set_myself_wed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Wednesday"
+                android:textColor="@color/cycle_cb_tc"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/sport_jwotch_set_myself_thu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Thursday"
+                android:textColor="@color/cycle_cb_tc"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/w_full_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <CheckBox
+                android:id="@+id/sport_jwotch_set_myself_fri"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Friday"
+                android:textColor="@color/cycle_cb_tc"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/sport_jwotch_set_myself_sat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Saturday"
+                android:textColor="@color/cycle_cb_tc"
+                android:textSize="15dp" />
+
+            <CheckBox
+                android:id="@+id/sport_jwotch_set_myself_sun"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/Sunday"
+                android:textColor="@color/cycle_cb_tc"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/view_jwotchset_sure_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/pop_sure_btn_bg"
+                    android:gravity="center"
+                    android:text="@string/define"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

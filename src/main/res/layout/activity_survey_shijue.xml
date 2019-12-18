@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.jxj.jdoctorassistant.main.community.activity.questionnairesurvey.SurveyShijueActivity">
+
+    <include
+        android:id="@+id/activity_survey_shijue_title"
+        layout="@layout/view_doctor_title_right_bar"
+        />
+    <!-- 这里是一个RadioButton 的5个按钮 下方是5个FramLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--上方的5个条目-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自理能力"
+
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="认知能力"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="情绪能力"
+
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="视觉能力"
+                android:textColor="@color/app_blue"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="背景参数"
+                android:textColor="@color/colorblack"
+                android:textSize="14sp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--问题-->
+            <LinearLayout style="@style/survey_question">
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="20dp"
+                    android:background="@color/app_blue"
+                    />
+
+                <ImageView
+
+                    android:layout_width="4dp"
+                    android:layout_height="17dp"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    style="@style/survey_question_text"
+                    android:text="视力: "/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="是否有视力障碍，能否安全照顾自己"
+                    />
+
+
+            </LinearLayout>
+            <!--A 答案-->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp">
+
+                <RadioGroup
+                    android:id="@+id/shili_first_answer_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/shili_first_answer_a_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="正常环境下能照顾自己"/>
+
+                    <RadioButton
+                        android:id="@+id/shili_first_answer_b_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="低视力（矫正后视力0.05至0.3）生活需要照顾"/>
+
+                    <RadioButton
+                        android:id="@+id/shili_first_answer_c_rb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="由于视力障碍，不能安全照顾自己"/>
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_gray"
+                android:orientation="horizontal"
+                android:padding="8dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="12dp"
+                    android:text="医院诊断"/>
+
+
+            </RelativeLayout>
+            <!--下方的描述信息 6项 信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+
+                >
+
+                <!--得分与 评估结论-->
+
+                <!--是否具有 医院诊断-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是否具有医院诊断     "/>
+
+                    <RadioGroup
+                        android:id="@+id/shijue_ishave_zhenduan_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/shijue_dont_have_zhenduan_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="否"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/shijue_have_zhenduan_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="是"
+                            />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray_bg"/>
+                <!--诊断结果 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="诊断结果："
+                        />
+
+                    <EditText
+                        android:id="@+id/shijue_zhenduan_jieguo_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@null"
+
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray_bg"/>
+                <!--诊断时间-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="诊断时间："/>
+
+                    <TextView
+                        android:id="@+id/shijue_zhenduan_shijian_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="40dp"
+                        android:text="请点击选择时间"
+
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray_bg"/>
+                <!--医院名称-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="医院名称："
+                        />
+
+
+                    <EditText
+                        android:id="@+id/shijue_yiyuan_name_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray_bg"/>
+            <!--分数  结论  与提交 按钮-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="12dp"
+                        android:text="得分总结"/>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/shijue_defen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="36sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/shijue_jielun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自理"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/survey_shijue_submit_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/yy_btn_bg">
+
+                        <TextView
+
+                            style="@style/w_wrap_h_wrap"
+                            android:layout_centerInParent="true"
+                            android:text="下一项"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

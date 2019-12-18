@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/white_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <TextView
+            android:id="@+id/sport_time_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/sport_title_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</RelativeLayout>

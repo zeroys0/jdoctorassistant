@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    tools:context="com.jxj.jdoctorassistant.main.doctor.userlist.PatientInfoActivity">
+
+    <include
+        android:id="@+id/patient_info_title"
+        layout="@layout/view_doctor_title_right_bar"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+    <RelativeLayout
+        android:id="@+id/patient_info_rl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+        <com.jxj.jdoctorassistant.view.RoundImageView
+            android:id="@+id/patient_head_rigv"
+            android:layout_width="@dimen/color_center_halo_radius"
+            android:layout_height="@dimen/color_center_halo_radius"
+            android:layout_marginTop="@dimen/margin"
+            imagecontrol:border_outside_color="@color/gray"
+            imagecontrol:border_thickness="@dimen/login_line_width" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/patient_head_rigv"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/patient_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="宋若军"
+                android:layout_gravity="center_vertical"
+                />
+            <ImageView
+                android:id="@+id/patient_ispay_igv"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/img_heart"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/patient_head_rigv"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/patient_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="测试测试测试"
+                android:textColor="@color/gray_87"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/myright_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+    <com.jxj.jdoctorassistant.view.MyGridView
+        android:id="@+id/patient_function_gv"
+        android:layout_marginTop="5dp"
+        android:numColumns="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp"
+        />
+    <com.jxj.jdoctorassistant.view.MyGridView
+        android:id="@+id/patient_top_data_gv"
+        android:layout_marginTop="10dp"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/machine_data"
+            android:textColor="#707070"
+            android:layout_marginTop="12dp"
+            android:textSize="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        <Button
+            android:id="@+id/machine_data_record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/curve"
+            android:textColor="@color/app_blue"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/blue_border_white_corners20_bg"
+            android:layout_margin="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/patient_machine_data_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+    </ListView>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

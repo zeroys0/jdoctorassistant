@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">jDoctorAssistant</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 登录界面 -->
+    <string name="login_username_hint">Enter your username/mobliephone/email</string>
+    <string name="login_password_edt">Enter your password</string>
+    <string name="login_login_btn">login</string>
+    <string name="login_register_btn">register</string>
+    <string name="login_succeeded">Login Success</string>
+    <string name="login_find_password">Find password</string>
+    
+
+    
+ 	 <!-- 提醒 -->
+    <string name="jwotch_remind_list">List of jwotch remind</string>
+    <string name="add_newmind">Add new remind</string>
+    <string name="add_newmind_txt">Remind of jwotch</string>
+    <string name="remind_theme">Please enter the jwotch subject</string>
+    <string name="jwotch_remind_theme">Subject</string>
+    <string name="time">Time</string>
+    <string name="jwotch_remind_cycle">Repeat</string>
+    <string name="cycle_one">Once</string>
+    <string name="cycle_day">Everyday</string>
+    <string name="cycle_month">Every&#160;month</string>
+    <string name="cycle_self">Custom</string>
+
+    
+    <!-- 联系人 -->
+    <string name="contacts">Contacts</string>
+    <string name="relatives">Phone of relatives</string>
+    <string name="emey_contacts">Emergecy contacts</string>
+    <string name="add_newcontacts">Contact information</string>
+    <string name="add_relatives">Relatives information</string>
+    <string name="add_relatives_position">Location</string>
+    <string name="add_relatives_number">Please enter 1,2,3 or 4</string>
+    <string name="add_emey_relatives">Emergecy contact information</string>
+    <string name="relations">Relations</string>
+    <string name="tools_location">Location of help</string>
+    <!-- 求救定位界面 -->
+    <string name="help_location">Location&#160;for&#160;help</string>
+    <string name="locate">Locate</string>
+    <string name="locating">Locating</string>
+    <string name="located">Located</string>
+    <string name="location_record">Location&#160;record</string>
+    <string name="already_refresh">Refreshed</string>
+    <string name="address_data_req_fail">Address&#160;data&#160;requirement&#160;fails</string>
+    <string name="map_exception">Map&#160;exception</string>
+    <string name="general_location">General&#160;location</string>
+    <string name="red_location">Emergency&#160;location</string>
+    <string name="green_location">Health&#160;consultancy&#160;location</string>
+    <string name="type">Type</string>
+    <string name="here">Here</string>
+    <string name="location_info">Location information</string>
+    <!-- 运动监测界面 -->
+    <string name="sm_plan_set">Sports monitoring plan setting</string>
+    <string name="sm_status">Status</string>
+    <string name="sm_status_activate">activate</string>
+    <string name="sm_status_stop">Stop</string>
+    <string name="sm_cycle">Repeat type</string>
+    <string name="sm_plan">Sports monitoring plan </string>
+    <string name="sm_record">Sports monitoring record</string>
+    <string name="sport_monitor">Sports monitoring</string>
+    <string name="activity_monitor">Activity monitoring</string>
+    <string name="sport_type">Sports type</string>
+    <string name="add_new_plan">Sports plan</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="ma_ll_data_exception">Exception of Latitude and Logitude</string>
+    <string name="ma_trail_map">Sports trail</string>
+    <string name="sm_time_hint1">Start time should be earlier than the end time！</string>
+    <string name="sm_time_hint2">The time interval set within two hours！</string>
+    <string name="sm_time_hint3">Execution time is unreasonable</string>
+    <!--&lt;!&ndash; 充值套餐界面 &ndash;&gt;-->
+    <!--<string name="recharge_package">Recharge package</string>-->
+    <!--<string name="recharge_package_ins">Check the balance</string>-->
+    <!--<string name="my_balance">My balance</string>-->
+    <!--<string name="recharge">Recharge</string>-->
+    <!--<string name="money">$</string>-->
+    <!--<string name="money_pay">Payment</string>-->
+    <!--<string name="money_pay_now">Pay now</string>-->
+    <!--<string name="recharge_amount">Recharge amount</string>-->
+    <!--<string name="packages">Packages</string>-->
+    <!--<string name="packages_info">Packages information </string>-->
+    <!--<string name="recharge_success">Recharge succeeded</string>-->
+    <!--<string name="recharge_fail">Recharge failed</string>-->
+    <!--<string name="recharge_cancel">Recharge cancel</string>-->
+    <!--<string name="cancel_pay">Pay cancel</string>-->
+    <!--<string name="notice">Attention</string>-->
+    <!--<string name="balance_exception">Balance exception </string>-->
+    <!--<string name="ne_balance_not_show">Network exception, balance display failed</string>-->
+    <!--<string name="balance_ana_exception">Balance analysis exception</string>-->
+    <!--<string name="notInstalled">Payment application has not been installed.</string>-->
+
+    
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
+    <string name="define">Confirm</string>
+
+    <string-array name="user_function_list_group">
+        <item>查看信息</item>
+        <item>健康数据</item>
+        <item>工具</item>
+        <item>控制面板</item>
+        <item>发送信息</item>
+    </string-array>
+    
+
+    <!-- 数据统计图-->
+    <string name="left_right_arr">Left and right arrows</string>
+    <string name="select_date">Date selecet</string>
+    <string name="chart">Chart</string>
+    <string name="date">Date</string>
+    <string name="pre_month">Pre month</string>
+    <string name="next_month">Next month</string>
+    <string name="pre_week">Pre week</string>
+    <string name="next_week">Next week</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="x_date">(Date)</string>
+    <string name="update_time">Update time</string>
+
+    <!-- 我的界面 -->
+    <string name="basic_info">Basic information</string>
+    <string name="health_info">Health information</string>
+    <string name="contact_info">Contact information</string>
+    <string name="change_account">Account change</string>
+    <string name="my_integration">My integration</string>
+    <string name="system_set">System settings</string>
+    <string name="doctor_set_photo">Upload by photographying</string>
+    <string name="doctor_set_img">Upload form galary</string>
+    <string name="SD_warn">No SDcard！</string>
+    <string name="cancel_config">Head portrait set cancel</string>
+    <string name="personal_information">Personal information</string>
+    <string name="emergecy_contact">Emegercy contact</string>
+    <string name="jwotch_information">Jwotch information</string>
+
+    
+    <string name="update_phone">Replace secret security phone</string>
+    <string name="input_phone">Enter your last phone</string>
+    <string name="bind">Bind</string>
+       
+       <!-- 健康报告界面 -->
+    <string name="health_report">Health report</string>
+	<string name="myshare">Share</string>
+	<string name="big">Big</string>
+	<string name="small">Small</string>
+	<string name="bp">Blood pressure </string>
+	<string name="age">age</string>
+
+    <!--
+    <string name="abnormal">Abnormal</string>
+	<string name="normal">Normal</string>
+	<string name="high">High</string>
+	<string name="mid">Stable</string>
+	<string name="low">Low</string>
+	-->
+
+	
+    <string name="bp_cur">Pulse&#160;curve</string>
+	<string name="normal_up">Normal&#160;upper&#160;limit</string>
+	<string name="normal_down">Normal&#160;lower&#160;limit</string>
+
+    <string name="cal_ana">Calorie&#160;data&#160;analysis：</string>
+    <string name="pr_ana">Pulse&#160;data&#160;analysis：</string>
+    <string name="bp_ana">Blood&#160;pressure&#160;data&#160;analyze：</string>
+
+    <string name="ana_fail">Analysis&#160;failed</string>
+	<string name="cal_ana_fail">Calorie&#160;analysis&#160;and&#160;parameters&#160;acquisition&#160;failed&#160;because&#160;of&#160;network&#160;exception&#160;or&#160;other&#160;reasons.</string>
+    <string name="ihhr">iPrecare&#160;health&#160;ambassador&#160;report</string>
+	<string name="hphr">Health&#160;ambassador&#160;personal&#160;health&#160;report</string>
+	<string name="iparecare">iPrecare</string>
+	
+	
+	<string name="hr_1">Personal&#160;health&#160;report&#160;from&#160;health&#160;ambassador</string>
+	<string name="hr_2">Health&#160;measurement&#160;result-jWotch&#160;testing&#160;result</string>
+	<string name="hr_3">Health&#160;measurement&#160;result-advice&#160;and&#160;analysis</string>
+	<string name="hr_4">Related&#160;advice&#160;and&#160;analysis&#160;for&#160;living&#160;habits</string>
+	<string name="hr_5">Advice&#160;and&#160;analysis&#160;from&#160;data&#160;monitoring</string>
+	<string name="hr_6">(Attention:&#160;this&#160;advice&#160;is&#160;generate&#160;from&#160;system&#160;intelligently, if&#160;there&#160;are&#160;any&#160;differences&#160;from&#160;the&#160;reports&#160;sent&#160;by&#160;service&#160;staff,&#160;please&#160;refer&#160;to&#160;the&#160;reports.)</string>
+	
+	<string name="bp_unit">(mmHg)</string>
+	<string name="pr_unit">(Times/minute)</string>
+	<string name="cal_unit">(kcal)</string>
+	<string name="minute">minute</string>
+	<string name="step">Step</string>
+	<string name="state">state</string>
+   
+    
+       
+
+
+    
+    
+
+
+   
+    <!-- 运动界面 -->
+
+    <string name="measure">Measuring</string>
+    <string name="temperature_curve">Temperature Curve</string>
+    <string name="curve_temp">jTemp Curve</string>
+    <string name="curve_line">Volatility Curve</string>
+    <string name="curve_size">Volatility</string>
+    <string name="sport_jwotch_set">Sports Setting</string>
+    <string name="sport_jwotch_set_list">Sports plan monitoring list</string>
+    <string name="sport_jwotch_planset">Sports monitoring setting</string>
+    <string name="sport_jwotch_list_starttime">Start time</string>
+    <string name="sport_jwotch_list_endtime">End time</string>
+  
+
+    <string name="sport_jwotch_activity_monitor">Activity Monitoring</string>
+    <string name="sport_jwotch_sport_monitor">Sports Monitoring</string>
+    <string name="sport_jwotch_sport_consume">Sports Consumption</string>
+    <string name="sport_jwotch_sport_time">Sports time</string>
+    <string name="sport_jwotch_sport_distance">Sports distance</string>
+    <string name="sport_jwotch_sport_record_share">Keeping going!</string>
+	<string name="sm_record_hint">Note:Sports monitoring contains sports trail, calorie and steps which directly monitor on the watch, while activity monitoring is the above data which uploaded from the APP to the watch.</string>
+
+    
+
+    <!-- 数据展示界面 -->
+    <string name="week_data">Weekly data</string>
+    <string name="month_data">Monthly data</string>
+    <string name="custom_data">Custom data</string>
+    <string name="ps_measure_trend">Systolic pressure trend</string>
+    <string name="ps_measure">Systolic pressure measure</string>
+    <string name="pd_measure_trend">Diastolic pressure trend</string>
+    <string name="pd_measure">Diastolic pressure measure</string>
+    <string name="pr_measure">Pulse trend</string>
+    <string name="pr_measure_trend">Pulse measure</string>
+    <string name="cal_measure">Calorie trend</string>
+    <string name="cal_measure_trend">Calorie measure</string>
+    <string name="week">week</string>
+    <string name="month">month</string>
+    <string name="self_defined">Customize</string>
+    <string name="test_time">Time</string>
+    
+
+    <!-- 数据记录界面 -->
+     <string name="the_date_no_data">No measurement data of this date.</string>
+    <string name="pr_data_ana_exception">Pulse data analyze exception </string>
+    <string name="sv">Stroke volume</string>
+    <string name="co">cardiac output</string>
+    <string name="tpr">Total peripheral resistance</string>
+    <string name="ac">Arterial compliance</string>
+    <string name="stype">Starting mode</string>
+    <string name="auto">Auto</string>
+    <string name="manual">Manual</string>
+    <string name="data_record">Data record</string>
+    <string name="detailed_info">Detailed information</string>
+
+
+    <!-- 个人信息界面 -->
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="national">Nationa</string>
+    <string name="sex">Sex</string>
+    <string name="birthday">Birthday</string>
+    <string name="education">Education status</string>
+    <string name="is_married">Marital status</string>
+    <string name="is_work">Working status </string>
+    <string name="professional">Professional</string>
+    <string name="id_type">Id type</string>
+    <string name="id_number">Id number</string>
+    <string name="insurance_id">Insurance id</string>
+    <string name="ID_card">Id card</string>
+    
+
+    <string-array name="sex_array">
+	<item>Male</item>
+	<item>Female</item>
+	<item>Secrecy</item>
+	</string-array>
+	
+    <string-array name="marry_array">
+	<item>Unmarried</item>
+	<item>Married</item>
+	<item>Divorced</item>
+	<item>Widowed</item>
+	</string-array>
+	
+    <string-array name="work_array">
+	<item>Employed</item>
+	<item>Unemployed</item>
+	<item>Retired</item>
+	</string-array>
+	
+    <string-array name="id_type_array">
+	<item>Id card</item>
+	<item>passport</item>
+	<item>license</item>
+	<item>other</item>
+	</string-array>
+    
+ <string name="blood_type">Blood type</string>
+    <string name="ps">Systolic pressure</string>
+    <string name="pd">Diastolic pressure</string>
+    <string name="pr">Pulse</string>
+    <string name="waist">Waist</string>
+    <string name="address">Address</string>
+    <string name="myemail">Email</string>
+    <string name="phone">Phone</string>
+    <string name="myphone">Phone</string>
+    <string name="company">Company</string>
+    <string name="mobilephone">Mobile phone</string>
+    <string name="otherphone">Other phone</string>
+    <string name="myqq">QQ</string>
+    <string name="postcode">Postcode</string>
+    
+    <string name="ps_input_hint">Please enter a normal systolic blood pressure range (90-180)</string>
+    <string name="pd_input_hint">Please enter a normal diastolic blood pressure range (60-100)</string>
+    <string name="pb_input_hint">Please confirm Diastolic blood pressure higher than systolic blood diastolic </string>
+
+
+
+    <!-- 提示语 -->
+    <string name="not_null">Null is not allowed</string>
+    <string name="show_date">No more data</string>
+    <string name="health_state_ins">After health evaluation</string>
+    <string name="health_on">you are in the state of:</string>
+    <string name="health_state">Health state</string>
+    <string name="network_exception">Network exception</string>
+    <string name="other_exception">Network exception</string>
+    <string name="complete_info">Please complete your personal information.</string>
+    <string name="network_is_not_connected">Network is disconnected</string>
+    <string name="duv_title">New version available,please download!</string>
+    <string name="data_ana_exception">Data parse exception</string>
+    <string name="no_data">No data</string>
+    
+    
+    <!--&lt;!&ndash; 蓝牙温度 &ndash;&gt;-->
+        <!--<string name="qr_scan_not_found_hint">Please turn the jTemp on！</string>-->
+	<!--<string name="sensors_stop_test">Detection starting.</string>-->
+	<!--<string name="sensors_start_test">Detectin ending.</string>-->
+	<!---->
+    <!--<string name="alarm_max_title">High temperature</string>-->
+    <!--<string name="alarm_min_title">Low temperature</string>-->
+    <!--<string name="alarm_max">High temperature has been reached!</string>-->
+    <!--<string name="alarm_min">Low temperature has been reached!</string>-->
+    <!--<string name="sensors_user">User</string>-->
+    <!--<string name="sensors_name">Name</string>-->
+    <!--<string name="sensors_max">Max value</string>-->
+    <!--<string name="sensors_min">Min value</string>-->
+    <!--<string name="value_hint">Please input the temperature degree. </string>-->
+    <!--<string name="sensors_alarm_hint">When the detection result is higher or lower than threshold value, the alarming will be triggered.</string>-->
+    <!--<string name="sensors_stored_all_delete">Delete all.</string>-->
+    <!--<string name="sensors_new_all_add">Add all</string>-->
+    <!--<string name="double_sensors_add_hint">You have already added two patches.</string>-->
+    <!--<string name="thermometer_test">Temperature detection</string>-->
+    <!--<string name="sensors_list">Patch List</string>-->
+    <!---->
+    <!--<string name="one_sensor">Single patch</string>-->
+    <!--<string name="two_sensors">Left patch and right patch</string>-->
+    <!--<string name="left_sensors">Left Patch</string>-->
+    <!--<string name="right_sensors">Right Patch</string>-->
+    <!--<string name="more_sensors">Multiple Patches</string>-->
+    <!---->
+    <!--<string name="sensors_record">All detection records.</string>-->
+    <!--<string name="thremometer_record">Temperature Records</string>-->
+    <!---->
+    <!--<string name="sensors_match">Bluetooth Matching</string>-->
+    <!--<string name="sensors_stored_ins">Matched Patch</string>-->
+    <!--<string name="sensors_new_ins">New Patch</string>-->
+    <!---->
+ <!---->
+    <!--<string name="edt_hint">Please input the custom name.</string>-->
+    <!--<string name="scan_hint">Please confirm the QR code you scan is belonging to jTemp.</string>-->
+    <!--<string name="scan_title">Scan the QR code</string>-->
+    <!---->
+    <!--<string name="lowhum_hint">Temp is too low</string>-->
+    <!--<string name="highhum_hint">Temp is too high</string>-->
+    <!---->
+    <!--<string name="hum">Temp</string>-->
+    <!--<string name="progress"></string>-->
+    <!--<string name="bt">Bluetooth adapter</string>-->
+    <!--<string name="nodevice">There are no SensorTags advertising within range. Please push the side button on the SensorTag to start advertising.</string>-->
+    <!--<string name="image">Image</string>-->
+    <!--<string name="button_scan">Scanning</string>-->
+    <!--<string name="ble_not_supported">BLE is not supported</string>-->
+    <!--<string name="bt_not_supported">Bluetooth is not supported</string>-->
+    <!--<string name="bt_on">Bluetooth is on</string>-->
+    <!--<string name="bt_not_on">Bluetooth is off</string>-->
+    <!--<string name="app_closing">Exiting BLE SensorTag app</string>-->
+    <!--<string name="scan_advice">The Android device is not scanning. Please tap \'Scan\' to scan for SensorTags.</string>-->
+    <!--<string name="connect">Connect</string>-->
+    <!---->
+
+
+    <!--<string-array name="device_filter">-->
+        <!--<item>SensorTag</item>-->
+        <!--<item>SensorTag2</item>-->
+    <!--</string-array>-->
+
+
+    <!--<string name="start_periodic_scan_br_label">Start periodic scan Broadcast Receiver</string>-->
+    <!--<string name="stop_periodic_scan_br_label">Stop periodic scan Broadcast Receiver</string>-->
+    <!--<string name="scaner_br_label">Scanner Broadcast Receiver</string>-->
+
+    <!--<string name="no_sensors_stored">You have 0 temperature sensors.</string>-->
+    <!--<string name="no_ble">Device doesn\'t have BLE support!</string>-->
+
+    <!--<string name="menu_settings">Settings</string>-->
+    <!--<string name="menu_add">Find new device</string>-->
+    <!--<string name="menu_graph">View as graph</string>-->
+    <!--<string name="menu_list">View as list</string>-->
+    <!--<string name="menu_remove">Remove sensor</string>-->
+    <!--<string name="menu_show_period">Zoom to&#8230;</string>-->
+    <!--<string name="menu_day">1 Day</string>-->
+    <!--<string name="menu_week">1 Week</string>-->
+    <!--<string name="menu_month">1 Month</string>-->
+    <!--<string name="menu_all">Show all</string>-->
+
+    <!--<string name="scanning">Scanning for sensors&#8230;</string>-->
+
+
+
+
+    <!--<string name="status_updated">Recently updated</string>-->
+    <!--<string name="status_not_found">Not in range</string>-->
+
+    <!--<string name="graph_title">Temperature</string>-->
+    <!--<string name="battery">%.2f</string>-->
+    <!--<string name="temp">%.2f</string>-->
+    <!--<string name="temp_unit">%.2f°C</string>-->
+    <!--<string name="datetime">%1$te %1$tb %1$tR</string>-->
+    <!--<string name="time">%tR</string>-->
+    <!--<string name="bledate">%1$te %1$tb</string>-->
+
+    <!--<string name="alert_remove_sensor_msg">All sensor data will be lost. Do you want to proceed?</string>-->
+    <!--<string name="about_title">About</string>-->
+
+    <!--<string name="thremometer_record_set">温度记录设置</string>-->
+
+
+    <!-- 修改密码界面 -->
+    <string name="change_password">&#160;&#160;Change password</string>
+    <string name="original_password_tv">&#160;&#160;Current password</string>
+    <string name="original_password_edt">Enter your current password</string>
+    <string name="new_password_tv">&#160;&#160;New password&#160;&#160;&#160;&#160;</string>
+    <string name="new_password_edt">Enter your new password</string>
+    <string name="new_password_again_tv">&#160;&#160;Password confirm</string>
+    <string name="new_password_again_edt">Input again</string>
+    <string name="ok_to_change_tv">Confirm</string>
+    <string name="op_is_wrong">Wrong current password!</string>
+    <string name="np_do_no_same">Twice password are not same, please enter again.</string>
+    <string name="message_is_wrong">There is something wrong with the message.Please try again!</string>
+    <string name="message_is_empty">There are some essential messages you haven\'t filled!</string>
+   
+    <!-- 系统设置界面 -->
+     <string name="password_cell_phone">Password protection phone</string>
+    <string name="reset_password">Change your password</string>
+    <string name="activition">Active</string>
+    <string name="user_feedback">Feedback</string>
+    <string name="user_feedback_hint">Please input the feedback, thank you!</string>
+    <string name="about_company">About us</string>
+    <string name="quit_account">Exit</string>
+    <string name="submit">Submit</string>
+    
+    <!--本地字符串 -->
+    <string name="press_to_exit">再按一次退出</string>
+     <string name="dialog_message">加载中。。。</string>
+    <string name="id_date_error">身份证的出生日期无效</string>
+    <string name="id_num_error">身份证号码不正确！</string>
+    <string name="datedialog_title">设置日期</string>
+    <string name="progressbar_text">卡路里量</string>
+    <string name="timedialog_title">设置时间</string>
+
+    <string name="frequency">(次/分钟)</string>
+    <string name="loading_text">加载中.....</string>
+    <string name="tgou_data_error">数据加载失败</string>
+    <!-- 公用名词 -->
+     <string name="inactivated">inactivated</string>
+    <string name="dialog_date_set_title">Please set the date</string>
+    <string name="dialog_time_set_title">Please set the time</string>
+    <string name="timing_set">Set uploading gap</string>
+    <string name="bp_query_hint">Inquire the time of BP detection</string>
+    <string name="hr_query_hint">Inquire the starting and ending time of HR detection</string>
+    <string name="blood_pressure_monitor">Start remote BP detection.</string>
+    <string name="blood_pressure_title">Set BP detection gap</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="query">Query</string>
+    <string name="measure_pulse_txt">HR detection</string>
+    <string name="dtt_title">Set uploading gap</string>
+    <string name="heart_title">Set HR detection gap</string>
+    <string name="ok">OK</string>
+    <string name="mycancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="modify">Modify</string>
+    <string name="delete">Delete</string>
+    <string name="add_success">Add succeeded</string>
+    <string name="add_fail">Add failed</string>
+    <string name="update_success">Update succeeded</string>
+    <string name="update_fail">Update failed</string>
+    <string name="delete_success">Delete succeeded</string>
+    <string name="send_success">Send succeeded</string>
+    
+    
+    <string name="heartrate_set">设置心率监测时间间隔</string>
+    <string name="heartrate_monitor">一键测量心率</string>
+    
+
+    
+
+    <!-- 注册界面 -->
+
+    <string name="username">用户名</string>
+
+    <string name="old_password">原密码</string>
+    <string name="new_password">新密码</string>
+    <string name="password_cure">密码确认</string>
+    <string name="register_username_edt">请输入用户名</string>
+    <string name="login_again_password_edt">请再一次输入确认密码</string>
+    <string name="register_name_edt">请输入您的真实姓名</string>
+    <string name="register_name_exit">用户名已存在，请重新输入!</string>
+    <string name="register_name_able">用户名可用!</string>
+    <string name="register_name_null">用户名不能为空!</string>
+    <string name="register_password_null">密码不能为空!</string>
+    <string name="set_password_worn">新旧密码不能一致</string>
+    <string name="set_againpassword_worn">密码不一致</string>
+    <string name="new_password_worn">旧密码错误，请重新输入!</string>
+    <string name="register_password_worn">密码只能以字母开头，长度6~18的字符，数字或者下划线</string>
+    <string name="register_pasword_cure">两次输入密码不一致</string>
+    <string name="register_info">请填写完整信息</string>
+
+    <string name="register_phone_edt">请输入您的联系方式</string>
+    <string name="register_email">联系邮件</string>
+    <string name="register_email_edt">请输入您的联系邮件</string>
+    <string name="register_address">联系地址</string>
+    <string name="register_address_edt">请输入您的联系地址</string>
+    <string name="agreement_register">同意《随访助手》协议</string>
+
+    <!-- 异常提示 -->
+    <string name="null_warning">用户名或密码不能为空!</string>
+
+    <!-- 用户列表界面 -->
+    <string name="search_text_hint">请输入需要搜索的用户名</string>
+    <string name="list_item_type1">用户ID</string>
+    <string name="list_item_type2">姓名</string>
+    <string name="list_item_type3">腕表号</string>
+
+    
+   
+    <string name="birth">出生日期</string>
+    <string name="eduction">教育</string>
+    <string name="marry">婚姻状况</string>
+    <string name="work_state">工作状况</string>
+    <string name="profession">职业</string>
+    <string name="card_type">证件类型</string>
+    <string name="card_id">证件编号</string>
+
+    
+    <string name="jwotch_id">JWotchID</string>
+    <string name="phone_number">腕宝号码</string>
+    <string name="product_model">腕表类型</string>
+    <string name="serial_number">IMEI号</string>
+    <string name="status">状态</string>
+    
+
+
+    <!-- 健康信息界面 -->
+    
+    <string name="oxygen">血氧</string>
+    <string name="temperature_one">体温1</string>
+    <string name="temperature_two">体温2</string>
+    <string name="height">身高</string>
+    <string name="weight">体重</string>
+    
+
+    <!-- 主界面 -->
+    <string name="doctor_name">李医生</string>
+    <string name="classify">分类</string>
+    <string name="all_label">全部标签</string>
+    <string name="label">标签</string>
+    <string name="all">全部</string>
+    <string name="normal">正常</string>
+    <string name="unnaomal">异常</string>
+    <string name="cure">确 定</string>
+    <string name="date_set">设置日期</string>
+    <string name="cancle">取 消</string>
+    <string name="patient">患</string>
+    <string name="hypertension">高血压</string>
+    <string name="pb_unit">(mmHg):</string>
+    
+    <string name="oxygen_unit">(mmol/L):</string>
+    <string name="temperature_unit">(℃):</string>
+
+    
+    <string name="measure_record">测量记录</string>
+    
+    <string name="blood_measure_record">血压测量记录</string>
+    
+    <string name="ps_and_unit">收缩压:</string>
+    <string name="pd_and_unit">舒张压:</string>
+    <string name="hr_and_unit">脉率:</string>
+    
+<!-- 菜单栏 -->
+	<string name="male">Male</string>
+	<string name="female">Female</string>
+
+
+    
+    <string name="health_on_status">健康状态</string>
+    <string name="health_state_worn">亚健康状态</string>
+    <string name="health_state_ok">健康状态</string>
+    <string name="health_state_no">不健康状态</string>
+    <string name="calorie">卡路里</string>
+    <string name="pluse">心率</string>
+    <string name="height_size">cm</string>
+    <string name="weight_size">kg</string>
+    <string name="pulse">脉搏</string>
+    <string name="systolic_pressure">收缩压</string>
+    <string name="diastolic_pressure">舒张压</string>
+    <string name="heart_record">心率测量记录</string>
+    <string name="blood_record">血压</string>
+    <string name="heart_record_size">次/分钟</string>
+    
+    <string name="bloodrate_set">设置血压监测时间间隔</string>
+   
+
+    <!-- 控制中心字符串数据 -->
+    <string-array name="control_center_array">
+        <item>Alarm</item>
+        <item>Auto Callback</item>
+        <item>Download remind list</item>
+        <item>Download contact</item>
+        <item>Open GPS</item>
+        <item>Restart</item>
+        <item>Auto power on</item>
+        <item>Base infomation</item>
+        <item>Call center</item>
+        <item>Sync relatives contact </item>
+        <item>Sync sport plan</item>
+        <item>Open heartrate</item>
+        <item>Sync heartrate period</item>
+        <item>Open bloodoxygen</item>
+        <item>Sync bloodoxygen period</item>
+        <item>Open bloodpressure</item>
+        <item>Sync bloodpressure period</item>
+    </string-array>
+    <string-array name="control_center_array_cmd">
+        <item>JDOCTOR_ALARM</item>
+        <item>JDOCTOR_AUTOCALLBACK</item>
+        <item>JDOCTOR_DOWNLOAD_REMIND_LIST</item>
+        <item>JDOCTOR_DOWNLOADCONTACT</item>
+        <item>JDOCTOR_OPENGPS</item>
+        <item>JDOCTOR_RESTART</item>
+        <item>JDOCTOR_SYNCH_AUTOSTARTSTOPTIME</item>
+        <item>JDOCTOR_SYNCH_BASE_INFO</item>
+        <item>JDOCTOR_SYNCH_HEALTHNUMBER</item>
+        <item>JDOCTOR_SYNCH_RELATIVES_CONTACT</item>
+        <item>JDOCTOR_SYNCH_SPORT_PLAN</item>
+        <item>JDOCTOR_OPEN_HEARTRATE</item>
+        <item>JDOCTOR_SYNCH_HEARTRATE_PERIOD</item>
+        <item>JDOCTOR_OPEN_BLOODOXYGEN</item>
+        <item>JDOCTOR_SYNCH_BLOODOXYGEN_PERIOD</item>
+        <item>JDOCTOR_OPEN_BLOODPRESSURE</item>
+        <item>JDOCTOR_SYNCH_BLOODPRESSURE_PERIOD</item>
+    </string-array>
+
+    
+    <string name="query_hint">Heart rate measurement record query time</string>
+   
+    <string name="blood_title">Set the blood pressure monitoring time interval</string>
+
+
+    <!-- 三方数据 -->
+    <string-array name="third_data_array">
+        <item>Blood glucose</item>
+        <item>Blood oxygen</item>
+        <item>Blood pressure</item>
+        <item>Body fat</item>
+        <item>Ear thermometer</item>
+    </string-array>
+
+    <string name="ft">Fahrenheit </string>
+    <string name="ct">Centigrade</string>
+    <string name="bg">Blood glucose</string>
+
+    <string name="target_weight">Target weight</string>
+    <string name="measure_weight">Measure weight</string>
+    <string name="body_fat">Body fat</string>
+    <string name="basic_metabolism">Basic metabolism</string>
+    <string name="visceral_fat_level">Visceral fat level</string>
+    <string name="bone_mass">Bone mass</string>
+    <string name="muscle">Muscle</string>
+    <string name="human_impedance">Human impedance</string>
+    <string name="water">Water</string>
+    
+    <string name="bo">Blood Oxygen</string>
+
+    <!-- 疾病信息 -->
+    <string name="disease_info">疾病信息</string>
+    <string name="input_disease_info">请输入疾病信息</string>
+    <string name="disease_list">疾病列表</string>
+    <string name="disease_detail_info">疾病详细信息</string>
+    <string name="disease_symptom">相关病状</string>
+    <string name="disease_symptom_text">病状描述</string>
+    <string name="disease_text">疾病描述</string>
+    <string name="disease_cause">疾病原因</string>
+    <string name="disease_care">预防护理</string>
+    <string name="disease_drug">相关药品</string>
+    <string name="disease_food">相关食物</string>
+    <string name="disease_check">相关检查</string>
+    <string name="disease_relation">相关疾病</string>
+
+    <!-- 医生注册-->
+    <string-array name="job_title_arr">
+        <item>主任医师</item>
+        <item>副主任医师</item>
+        <item>主治医师</item>
+        <item>住院医师</item>
+    </string-array>
+    <string name="doctor_name_hint">请输入您的姓名</string>
+    <string name="doctor_hospital_hint">请选择您所在的医院</string>
+    <string name="doctor_department_hint">请选择您所在的科室</string>
+    <string name="doctor_title_hint">请选择您的职称</string>
+    <string name="doctor_phone_hint">请输入您的联系电话</string>
+    <string name="doctor_resume_hint">请输入您的个人介绍</string>
+
+    <string name="hospital">医院</string>
+    <string name="hospital_hint">手动输入医院</string>
+    <string name="department">科室</string>
+    <string name="department_hint">手动输入科室</string>
+    <string name="job_title">职称</string>
+    <string name="register_phone">联系电话</string>
+    <string name="personal_introduction">个人介绍</string>
+    <string name="next_step">下一步</string>
+
+    <string name="set_hospital_hint">选择医院前，请先选择医院的所在城市</string>
+    <string name="doctor_register">医生注册</string>
+    <string name="input_graph_code">请输入图形验证码</string>
+    <string name="input_sms_code">请输入短信验证码</string>
+    <string name="get_sms_code">获取短信验证码</string>
+    <string name="set_password">请设置密码</string>
+    <string name="set_password_again">请再次输入密码</string>
+    <string name="register_hint">点击注册，即表明同意</string>
+    <string name="register_protocol">《随护助手协议》</string>
+
+    <string name="register_success">恭喜您，注册成功!</string>
+    <string name="perfect_personal_info">完善个人信息</string>
+    <string name="doctor_certificate">医师执业证书</string>
+    <string name="reference_sample">参考示例</string>
+    <string name="certificate_info">身份证明</string>
+    <string name="submit_check">提交审核</string>
+    <string name="certificate_hint">点击上传照片，上传的照片形式请参考示例进行拍摄，证件上的所有信息必须清晰可识别，大小不超过2M。</string>
+    <string name="doctor_result">资料提交成功，正在审核，请耐心等待。</string>
+    <string name="re_edit">重新填写</string>
+
+    <string name="applicant">申请人</string>
+    <string name="assessment_report">评估记录</string>
+    <string name="assessment_order">预约评估</string>
+
+</resources>

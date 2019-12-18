@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/white_bg"
+    >
+
+ <ImageView
+     android:id="@+id/igv"
+     android:layout_centerInParent="true"
+     android:layout_width="284dp"
+     android:layout_height="364dp"
+     android:layout_margin="20dp"
+     />
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_blue"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            >
+            
+            
+        <EditText
+            android:id="@+id/user_info_input_et"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:hint="@string/search_text_hint" />
+
+        <ImageButton
+            android:id="@+id/user_list_search_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/user_info_input_et"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/search_btn"
+            android:background="@color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_blue"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/disease_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:background="@drawable/disease"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cpb_grey">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/user_list_item_margin_left"
+            android:layout_marginTop="@dimen/user_list_item_margin_top"
+            android:textColor="@color/app_blue"
+            android:textSize="16sp"
+            android:text="@string/list_item_type1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/user_list_item_margin_top"
+            android:textColor="@color/cpb_blue"
+            android:textSize="16sp"
+            android:text="@string/list_item_type2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/user_list_item_margin_top"
+            android:layout_marginRight="@dimen/user_list_item_margin_left"
+            android:textColor="@color/cpb_blue"
+            android:textSize="16sp"
+            android:text="@string/list_item_type3" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/user_list_lv"
+        style="@style/w_h_full"
+         >
+    </ListView>
+
+</LinearLayout>

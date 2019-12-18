@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/w_h_full"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bmi_mar_top"
+            android:background="@color/titlebar_bgColor" >
+
+            <ImageView
+                android:id="@+id/location_backbtn"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/color_pointer_radius"
+                android:adjustViewBounds="true"
+                android:src="@drawable/back" />
+
+            <LinearLayout
+                style="@style/w_wrap_h_full"
+                android:layout_centerInParent="true" >
+
+                <RadioGroup
+                    android:id="@+id/location_radiogroup"
+                    android:layout_width="210dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/baidu_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/contacts_bg"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="百度Map"
+                        android:textColor="@color/login_loginBtn_bgColor"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/google_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/emey_contacts_bg"
+                        android:button="@null"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:text="GoogleMap"
+                        android:textColor="@color/white_bg"
+                        android:textSize="15dp" />
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/location_ll"
+            style="@style/w_h_full" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

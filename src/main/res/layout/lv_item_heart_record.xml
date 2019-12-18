@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/white_bg" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/color_center_halo_radius"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/w_h_full"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_bar_text"
+            android:layout_marginRight="@dimen/title_bar_text" >
+
+            <TextView
+                android:id="@+id/heart_record_time_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="2015-12-28  14:27:26" />
+
+            <TextView
+                android:id="@+id/temp_size_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/heart_record_size" />
+
+            <ImageView
+                android:id="@+id/heart_record_img"
+                style="@style/w_wrap_h_wrap"
+                android:layout_above="@id/temp_size_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/img_margin_bottom"
+                android:layout_marginTop="@dimen/img_margin_bottom"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/heart_record_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_toLeftOf="@id/temp_size_tv"
+                android:text="139"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

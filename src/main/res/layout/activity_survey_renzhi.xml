@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.jxj.jdoctorassistant.main.community.activity.questionnairesurvey.SurveyRenzhiActivity">
+
+    <include
+        android:id="@+id/activity_survey_renzhi_title"
+        layout="@layout/view_doctor_title_right_bar"/>
+    <!--上方的5个条目-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自理能力"
+
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="认知能力"
+            android:textColor="@color/app_blue"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="情绪能力"
+            android:textColor="@color/colorblack"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视觉能力"
+            android:textColor="@color/colorblack"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="背景参数"
+            android:textColor="@color/colorblack"
+            android:textSize="14sp"
+
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white2"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+        <!-- 4个问题  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--问题 1近期记忆-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="1.近期记忆: "/>
+                </LinearLayout>
+
+                <!--描述 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="先复述再回忆 1）回忆：皮球 2）回忆：国旗 3）回忆：树木"
+                        />
+                </LinearLayout>
+
+
+                <!--答案-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp"
+
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/renzhi_first_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/renzhi_first_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="无需提示,回答正确,回答时间小于30s"/>
+
+                        <RadioButton
+                            android:id="@+id/renzhi_first_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="无需提示,回答正确,回答时间:小于60s 大于30s"/>
+
+                        <RadioButton
+                            android:id="@+id/renzhi_first_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="在提示下能回答部分"/>
+
+                        <RadioButton
+                            android:id="@+id/renzhi_first_answer_d_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="在提示下不能回答"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--问题 2程序记忆-->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="2.程序记忆: "/>
+                </LinearLayout>
+
+                <!--描述-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="完成口头命令 1）用右手拿纸 2）将纸对折 3）放在大腿上"/>
+
+
+                </LinearLayout>
+                <!--答案-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+
+                    <RadioGroup
+                        android:id="@+id/renzhi_second_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/renzhi_second_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="正确完成"/>
+
+                        <RadioButton
+                            android:id="@+id/renzhi_second_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="在提示下能正确完成s"/>
+
+                        <RadioButton
+                            android:id="@+id/renzhi_second_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="经提示也不能完成"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--问题 3定向能力-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"/>
+
+                    <ImageView
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="3.定向能力: "/>
+                </LinearLayout>
+                <!--描述-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 1）今年的月份 2）现在是几月 3）这是哪里 4）在那一层楼上"
+                        />
+
+
+                </LinearLayout>
+                <!--答案-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+                    <RadioGroup
+                        android:id="@+id/renzhi_third_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/renzhi_third_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="回答正确"/>
+
+                        <RadioButton
+                            android:id="@+id/renzhi_third_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="在提示下能回答正确"/>
+
+                        <RadioButton
+                            android:id="@+id/renzhi_third_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="经提示也不能回答正确"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--问题 4判断能力-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <!--问题-->
+                <LinearLayout style="@style/survey_question">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="20dp"
+                        android:background="@color/app_blue"
+                        />
+
+                    <ImageView
+
+                        android:layout_width="4dp"
+                        android:layout_height="17dp"
+                        android:scaleType="fitXY"
+                        />
+
+                    <TextView
+                        style="@style/survey_question_text"
+                        android:text="4.判断能力: "/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 1）辨认：手表 2）辨认：铅笔 "
+                        />
+
+
+                </LinearLayout>
+                <!--A 答案-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+                    <RadioGroup
+                        android:id="@+id/renzhi_fourth_answer_rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/renzhi_fourth_answer_a_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="判断正确"/>
+
+                        <RadioButton
+                            android:id="@+id/renzhi_fourth_answer_b_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="在提示下回答正确，表现为迟缓不决"/>
+
+                        <RadioButton
+                            android:id="@+id/renzhi_fourth_answer_c_rb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="判断错误"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_gray"
+                android:orientation="horizontal"
+                android:padding="8dp"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="12dp"
+                    android:text="医院诊断"/>
+
+
+            </RelativeLayout>
+            <!--下方的描述信息 6项 信息 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+
+
+                >
+
+                <!--得分与 评估结论-->
+
+                <!--是否具有 医院诊断-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是否具有医院诊断     "/>
+
+                    <RadioGroup
+                        android:id="@+id/renzhi_is_have_zhenduan_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/renzhi_dont_have_zhenduan_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="否"/>
+
+                        <RadioButton
+                            android:id="@+id/renzhi_have_zhenduan_rb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="是"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray_bg"/>
+                <!--诊断结果 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="诊断结果："
+                        />
+
+                    <EditText
+                        android:id="@+id/renzhi_zhenduan_jieguo_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray_bg"/>
+                <!--诊断时间-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="诊断时间："/>
+
+                    <TextView
+                        android:id="@+id/renzhi_zhenduan_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="40dp"
+                        android:text="请点击选取时间"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray_bg"/>
+                <!--医院名称-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="医院名称："
+                        />
+
+                    <EditText
+                        android:id="@+id/renzhi_zhenduan_yiyuan_name_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/gray_bg"/>
+            <!--分数  结论  与提交 按钮-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="12dp"
+                        android:text="得分总结"/>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/renzhi_all_score_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="36sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/renzhi_jielun_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自理"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/survey_renzhi_submit_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/yy_btn_bg">
+
+                        <TextView
+
+                            style="@style/w_wrap_h_wrap"
+                            android:layout_centerInParent="true"
+                            android:text="下一项"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"/>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/disease_info_title"
+        layout="@layout/view_title_right_bar"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+        <EditText 
+            android:id="@+id/disease_name_et"
+            android:layout_width="match_parent"
+			android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="100dp"
+            android:paddingLeft="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/white_corners5_bg"
+            android:hint="@string/input_disease_info"
+            />
+        <ImageView
+            android:id="@+id/disease_search"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_btn" 
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/gray_bg"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/disease_class_rv"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:background="@color/white"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/disease_info_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:scrollbars="none"
+                android:background="@color/white"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/disease_info_load_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.jxj.jdoctorassistant.view.CustomClipLoading
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.jxj.jdoctorassistant.view.CustomClipLoading>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    
+
+    
+
+</LinearLayout>

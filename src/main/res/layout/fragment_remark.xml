@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:weightSum="2"
+    >
+    <EditText
+        android:id="@+id/remark_etv"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:hint="@string/input_remark_info"
+        android:background="@color/white"
+        android:gravity="top"
+        android:padding="10dp"
+        android:textSize="12dp"
+        />
+    <Button
+        android:id="@+id/remark_finish_btn"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finish"
+        android:background="@drawable/gray_border_bg"
+        android:textSize="14dp"
+        />
+
+</LinearLayout>

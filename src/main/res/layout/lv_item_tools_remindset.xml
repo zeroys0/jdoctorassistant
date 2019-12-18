@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        style="@style/w_full_h_wrap"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_bg"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            style="@style/w_wrap_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/remind_title_tv"
+                style="@style/w_wrap_h_wrap"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/remind_cycle_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/fragment_sports_plan_txt"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            style="@style/w_h_full"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2" >
+
+            <RelativeLayout
+                android:id="@+id/remind_update_rl"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/fragment_sports_plan_update_imgv"
+                    style="@style/w_wrap_h_wrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="35dp"
+                    android:src="@drawable/sport_jwotch_set_update" />
+
+                <TextView
+                    android:id="@+id/fragment_sports_plan_update_txt"
+                    style="@style/w_wrap_h_wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/fragment_sports_plan_update_imgv"
+                    android:text="修改"
+                    android:textColor="@color/gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/remind_delete_rl"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/fragment_sports_plan_delete_txt"
+                    style="@style/w_wrap_h_wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="35dp"
+                    android:text="删除"
+                    android:textColor="@color/gray" />
+
+                <ImageView
+                    android:id="@+id/fragment_sports_plan_delete_imgv"
+                    style="@style/w_wrap_h_wrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/fragment_sports_plan_delete_txt"
+                    android:src="@drawable/sport_jwotch_set_delete" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

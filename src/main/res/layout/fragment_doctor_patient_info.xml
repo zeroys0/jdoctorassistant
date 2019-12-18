@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-基本信息"
+                android:layout_marginTop="13dp"
+                android:textSize="12dp"
+                android:layout_marginLeft="23dp"
+                android:textColor="#BABABA"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_border_bg"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar"
+                    >
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/name"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_name_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp"/>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sex"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_sex_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp"/>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar"
+     >
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/national"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_national_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/is_married"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+                    <TextView
+                        android:id="@+id/patient_birth_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/education"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_education_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar"
+                >
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/professional"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_marry_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/birthday"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_profession_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/register_phone"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_phone_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/email"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_email_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/address"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_address_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2-健康信息"
+                android:layout_marginTop="13dp"
+                android:textSize="12dp"
+                android:layout_marginLeft="23dp"
+                android:textColor="#BABABA"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/info_border_bg">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/height"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_blood_type_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:textSize="@dimen/text_size" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/weight"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_ps_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:textSize="@dimen/text_size" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/waistline_unit_info"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_pd_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:textSize="@dimen/text_size" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/blood_type"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_height_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:textSize="@dimen/text_size" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/ps"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_weight_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:textSize="@dimen/text_size" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/pd"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/patient_waist_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:textSize="@dimen/text_size" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3-病史"
+                android:layout_marginTop="13dp"
+                android:textSize="12dp"
+                android:layout_marginLeft="23dp"
+                android:textColor="#BABABA"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/info_border_bg"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar"
+                    >
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/personal_ill_history"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/personal_ill_history_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp"/>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/infection_history"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/infection_history_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp"/>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar"
+                    >
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/psychosis_history"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/psychosis_history_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/tumour"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+                    <TextView
+                        android:id="@+id/tumour_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/operated"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/operated_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar"
+                    >
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/injury"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/injury_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/transfusion"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/transfusion_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/heritable_disease"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/heritable_disease_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/activity_bar">
+
+                    <TextView
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:text="@string/orther"
+                        android:textColor="@color/ingo_gray"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="14dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="64dp"
+                        android:background="@color/gray_bg"/>
+
+                    <TextView
+                        android:id="@+id/orther_tv"
+                        style="@style/w_wrap_h_wrap"
+                        android:layout_centerVertical="true"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="83dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/line_width"
+                        android:layout_alignParentBottom="true"
+                        android:src="@color/gray_bg" />
+                </RelativeLayout>
+            </LinearLayout>
+
+                <!--<ListView-->
+                    <!--android:id="@+id/patient_history_lv"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                <!--</ListView>-->
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="patient_function_img_arr">
+        <item>@drawable/patient_function_message</item>
+        <item>@drawable/patient_function_message</item>
+        <item>@drawable/patient_function_message</item>
+        <item>@drawable/patient_function_message</item>
+        <item>@drawable/patient_function_message</item>
+        <item>@drawable/patient_function_message</item>
+        <item>@drawable/patient_function_message</item>
+        <item>@drawable/patient_function_message</item>
+    </array>
+
+</resources>

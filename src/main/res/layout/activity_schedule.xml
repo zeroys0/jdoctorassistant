@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.doctor.schedule.ScheduleActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+
+            >
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/back_igv"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@drawable/myleft_arrow"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="消息通知"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            >
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/right_btn_igv"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/right_btn_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabIndicatorColor="@color/tab_color"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/tab_color"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo.Small"
+        app:tabTextColor="#595959">
+
+    </android.support.design.widget.TabLayout>
+<android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/viewpager_schedule">
+
+</android.support.v4.view.ViewPager>
+
+</LinearLayout>

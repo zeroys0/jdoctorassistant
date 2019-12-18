@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jxj.jwotchhelper.page.thirdData.FragmentThirdDataBt">
+    <RelativeLayout
+        style="@style/w_full_h_wrap"
+        android:background="@color/white" >
+
+        <LinearLayout
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/age"
+                android:textColor="@color/third_data_lv_head_tc"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/bf_age_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_marginLeft="2dp"
+                android:textColor="#1C1C1C"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/w_wrap_h_wrap"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/height"
+                android:textColor="@color/third_data_lv_head_tc"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/bf_height_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_marginLeft="2dp"
+                android:textColor="#1C1C1C"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/w_wrap_h_wrap"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/sex"
+                android:textColor="@color/third_data_lv_head_tc"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/bf_sex_tv"
+                style="@style/w_wrap_h_wrap"
+                android:layout_marginLeft="2dp"
+                android:textColor="#1C1C1C"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/third_data_bf_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

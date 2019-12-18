@@ -1,0 +1,267 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/w_h_full"
+    android:background="@color/white_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/health_info_titile"
+        layout="@layout/view_title_right_bar" />
+
+    <LinearLayout
+        style="@style/w_h_full"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/blood_type"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/health_blood_type_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/ps"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/health_ps_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/pd"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/health_pd_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/pr"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/health_pr_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/oxygen"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/health_oxygen_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/temperature_one"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/health_temperature_one_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/temperature_two"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/health_temperature_two_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/height"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/health_height_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/weight"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/health_weight_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_bar" >
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:layout_centerVertical="true"
+                android:text="@string/waist"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/health_waist_txt"
+                style="@style/w_wrap_h_wrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line_width"
+                android:layout_alignParentBottom="true"
+                android:src="@color/gray_bg" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

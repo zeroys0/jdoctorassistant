@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_title_height"
+        android:background="@color/white"
+        android:padding="5dp"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="全部"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/all_customer_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"
+                android:textColor="@color/gray_87"
+                />
+
+            <ImageView
+                android:id="@+id/doctor_user_list_search_igv"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/search_doctor"
+                android:background="@color/white" />
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/exception_user_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/data_exception"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="45dp"
+                    android:text="@string/data_exception"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:id="@+id/exception_user_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12dp"
+                    android:text="35人 >"
+                    android:textColor="@color/gray_87"
+                    android:gravity="center_vertical"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/special_user_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/special_care"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/special_care"
+                    android:layout_marginLeft="45dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:id="@+id/special_user_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/gray_87"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12dp"
+                    android:text="35人 >"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/else_class"
+                android:textColor="@color/gray_87"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:padding="2dp"
+                android:layout_marginLeft="12dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/late_service_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@color/white"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/recent_service"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/late_service"
+                    android:layout_marginLeft="45dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:id="@+id/late_service_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/gray_87"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12dp"
+                    android:text="35人 >"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/late_add_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:layout_marginTop="2dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/recent_add"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/late_add"
+                    android:layout_marginLeft="45dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:id="@+id/late_add_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12dp"
+                    android:text="35人 >"
+                    android:textColor="@color/gray_87"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/late_browse_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:layout_marginTop="2dp"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/recent_browse"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/late_browse"
+                    android:layout_marginLeft="45dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    />
+                <TextView
+                    android:id="@+id/late_browse_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/gray_87"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12dp"
+                    android:text="35人 >"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cpb_grey"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/user_list_item_margin_left"
+                    android:layout_marginTop="@dimen/user_list_item_margin_top"
+                    android:textColor="@color/app_blue"
+                    android:textSize="16sp"
+                    android:text="@string/list_item_type1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/user_list_item_margin_top"
+                    android:textColor="@color/cpb_blue"
+                    android:textSize="16sp"
+                    android:text="@string/list_item_type2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/user_list_item_margin_top"
+                    android:layout_marginRight="@dimen/user_list_item_margin_left"
+                    android:textColor="@color/cpb_blue"
+                    android:textSize="16sp"
+                    android:text="@string/list_item_type3" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/doctor_user_list_lv"
+                style="@style/w_h_full"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

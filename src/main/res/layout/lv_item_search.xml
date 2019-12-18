@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/activity_title_bar"
+        android:layout_marginLeft="@dimen/title_bar_text"
+        android:layout_marginRight="@dimen/title_bar_text"
+        android:background="@color/gray_bg" >
+
+        <TextView
+            android:id="@+id/search_word_tv"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:text="tyk" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/list_account_account"-->
+            <!--style="@style/w_wrap_h_wrap"-->
+            <!--android:layout_centerInParent="true"-->
+             <!--android:textSize="15dp"-->
+            <!--android:text="tyk" />-->
+
+        <ImageView
+            android:id="@+id/delete_igv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_delete"/>
+    </RelativeLayout>
+
+</LinearLayout>
